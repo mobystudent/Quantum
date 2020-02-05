@@ -4,6 +4,22 @@
     &__cat {
         border-left: 2px solid $dimWhite;
         border-right: 2px solid $dimWhite;
-        padding: 16px 38px;
+        padding: 16px 25px;
+    }
+
+    &__link {
+        padding-right: 23px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 8px;
+            height: 5px;
+            transform: translateY(-50%);
+            background: url("../img/arrow.png") no-repeat;
+            background-size: cover;
+        }
     }
 }

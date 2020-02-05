@@ -6,6 +6,7 @@ const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
+const imagemin = require('gulp-imagemin');
 
 gulp.task('view', () => {
     return gulp.src('view/*.pug')
@@ -30,11 +31,20 @@ gulp.task('style', () => {
         .pipe(gulp.dest('build/css'))
 });
 
+gulp.task('image', () => {
+    return gulp.src('img/*')
+        .pipe(imagemin({
+            progressive: true
+        }))
+        .pipe(gulp.dest('build/img'))
+});
+
 gulp.task('watch', () => {
     browserSync.init({
         server: "./build"
     });
 
+    gulp.watch('img/*', gulp.series('image'));
     gulp.watch('style/**/*.scss', gulp.series('style'));
     gulp.watch('view/**/*.pug', gulp.series('view'));
 });

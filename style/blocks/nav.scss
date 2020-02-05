@@ -1,24 +1,42 @@
 .nav {
-    border-top: 2px solid $dimWhite;
-    border-bottom: 2px solid $dimWhite;
-
-    &__select {
-        border-left: 2px solid $dimWhite;
-
-        &:last-child {
-            border-right: 2px solid $dimWhite;
-        }
+    &__link {
+        padding: 22px 27px;
 
         &--cat {
-            border-right: 2px solid $dimWhite;
+            padding: 22px 42px 22px 30px;
         }
     }
 
-    &__link {
-        padding: 22px 37px;
-    }
+    &__span {
+        &--cat {
+            padding-left: 40px;
 
-    &__list {
-        display: none;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 2px;
+                left: 0;
+                height: 12px;
+                width: 18px;
+                background: url("../img/burger.png") no-repeat;
+                background-size: cover;
+            }
+        }
+
+        &--filter {
+            padding-right: 20px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                height: 6px;
+                width: 10px;
+                transform: translateY(-50%);
+                background: url("../img/arrow.png") no-repeat;
+                background-size: cover;
+            }
+        }
     }
 }

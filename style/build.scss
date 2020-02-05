@@ -17,13 +17,13 @@
 @import "modificators/_colors.scss";
 @import "modificators/_ls.scss";
 @import "modificators/_border.scss";
+@import "modificators/_position.scss";
 
 //Blocks
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
 @import "blocks/container.scss";
 @import "blocks/wrap.scss";
-@import "blocks/categories.scss";
 @import "blocks/menu.scss";
 @import "blocks/logo.scss";
 @import "blocks/search.scss";
@@ -31,4 +31,3 @@
 @import "blocks/btn.scss";
 @import "blocks/personal.scss";
 @import "blocks/inscrip.scss";
-@import "blocks/icon.scss";
