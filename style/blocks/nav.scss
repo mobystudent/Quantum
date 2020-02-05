@@ -1,4 +1,24 @@
 .nav {
     border-top: 2px solid $dimWhite;
     border-bottom: 2px solid $dimWhite;
+
+    &__select {
+        border-left: 2px solid $dimWhite;
+
+        &:last-child {
+            border-right: 2px solid $dimWhite;
+        }
+
+        &--cat {
+            border-right: 2px solid $dimWhite;
+        }
+    }
+
+    &__link {
+        padding: 22px 37px;
+    }
+
+    &__list {
+        display: none;
+    }
 }

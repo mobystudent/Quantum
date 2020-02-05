@@ -1,28 +1,10 @@
-doctype html
-html(lang='ru')
-   head
-      title Test FD
-      meta(charset="utf-8")
-      meta(name="viewport" content="width=device-width, initial-scale=1")
-         
-      link(href="css/build.css" rel="stylesheet")
-   body
-      header.header
-         section.container
-            section.wrap.wrap--header
-               a.logo(href="/") QUANTUM
-               section.search
-               section.info
-      nav.nav
-         section.container
-            section.wrap.wrap--nav.display--fl
-               a.categories.font.font--med.text--small.color--dark-gray All Categories
-               section.menu
-                  a.menu__link.font.font--med.text--small.color--dark-gray Super Deals
-                  a.menu__link.font.font--med.text--small.color--dark-gray Featured Brands
-                  a.menu__link.font.font--med.text--small.color--dark-gray Collections
-                  a.menu__link.font.font--med.text--small.color--dark-gray Bestselling
-               a.help.font.font--med.text--small.color--gray Help
-               a.currency.font.font--med.text--small.color--gray USD
-               a.lang.font.font--med.text--small.color--gray Language
-               a.lang.font.font--med.text--small.color--gray Language ooottt
+extends layout/layout
+
+block title
+   title Main
+   
+block content
+   include includes/header.pug
+   include includes/nav.pug
+   
+   

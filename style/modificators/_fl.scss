@@ -1,5 +1,9 @@
-.flex {
+.fl {
     &--align-c {
         align-items: center;
+    }
+
+    &--just-bet {
+        justify-content: space-between;
     }
 }

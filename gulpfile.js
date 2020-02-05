@@ -15,7 +15,6 @@ gulp.task('view', () => {
         }))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('build'))
-        .pipe(browserSync.stream());
 });
 
 gulp.task('style', () => {
@@ -37,5 +36,5 @@ gulp.task('watch', () => {
     });
 
     gulp.watch('style/**/*.scss', gulp.series('style'));
-    gulp.watch('view/*.pug', gulp.series('view'));
+    gulp.watch('view/**/*.pug', gulp.series('view'));
 });

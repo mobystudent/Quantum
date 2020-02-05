@@ -1,0 +1,30 @@
+nav.nav
+   section.container.margin--center
+      section.wrap.wrap--nav.display--fl
+         section.nav__select.nav__select--cat
+            a.categories.font.font--med.text--small.color--dark-gray.cursor--pointer(href="#") All Categories
+            ul.nav__list
+               - for (let i = 0; i < 6; i++)
+                  li.nav__li Category #{i+1}
+         section.menu.display--fl.fl--align-c.fl--just-bet
+            a.menu__link.font.font--med.text--small.color--dark-gray.cursor--pointer(href="#") Super Deals
+            a.menu__link.font.font--med.text--small.color--dark-gray.cursor--pointer(href="#") Featured Brands
+            a.menu__link.font.font--med.text--small.color--dark-gray.cursor--pointer(href="#") Collections
+            a.menu__link.font.font--med.text--small.color--dark-gray.cursor--pointer(href="#") Bestselling
+         section.nav__select.display--fl.fl--align-c
+            a.help.nav__link.font.font--med.text--small.color--gray.cursor--pointer(href="#") Help
+            ul.nav__list
+               - for (let i = 0; i < 2; i++)
+                  li.nav__li.font.font--med.text--small.color--gray.cursor--pointer Item #{i+1}
+         section.nav__select.display--fl.fl--align-c
+            a.currency.nav__link.font.font--med.text--small.color--gray.cursor--pointer(href="#") USD
+            ul.nav__list
+               - const currency = ['USD', 'RUB', 'UAH'];
+               - for (let i = 0; i < currency.length; i++)
+                  li.nav__li.font.font--med.text--small.color--gray.cursor--pointer=currency[i]
+         section.nav__select.display--fl.fl--align-c
+            a.lang.nav__link.font.font--med.text--small.color--gray.cursor--pointer(href="#") Language
+            ul.nav__list
+               - const lang = ['en', 'ru', 'ua'];
+               - for (let i = 0; i < lang.length; i++)
+                  li.nav__li.font.font--med.text--small.color--gray.cursor--pointer=lang[i]

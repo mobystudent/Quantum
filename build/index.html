@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Test FD</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <title>Main</title>
+    <link href="css/reset.min.css" rel="stylesheet">
     <link href="css/build.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <section class="container">
+      <section class="container margin--center">
         <section class="wrap wrap--header"><a class="logo" href="/">QUANTUM</a>
           <section class="search"></section>
           <section class="info"></section>
@@ -16,9 +18,39 @@
       </section>
     </header>
     <nav class="nav">
-      <section class="container">
-        <section class="wrap wrap--nav display--fl"><a class="categories font font--med text--small color--dark-gray">All Categories</a>
-          <section class="menu"><a class="menu__link font font--med text--small color--dark-gray">Super Deals</a><a class="menu__link font font--med text--small color--dark-gray">Featured Brands</a><a class="menu__link font font--med text--small color--dark-gray">Collections</a><a class="menu__link font font--med text--small color--dark-gray">Bestselling</a></section><a class="help font font--med text--small color--gray">Help</a><a class="currency font font--med text--small color--gray">USD</a><a class="lang font font--med text--small color--gray">Language</a><a class="lang font font--med text--small color--gray">Language ooottt</a>
+      <section class="container margin--center">
+        <section class="wrap wrap--nav display--fl">
+          <section class="nav__select nav__select--cat"><a class="categories font font--med text--small color--dark-gray cursor--pointer" href="#">All Categories</a>
+            <ul class="nav__list">
+              <li class="nav__li">Category 1</li>
+              <li class="nav__li">Category 2</li>
+              <li class="nav__li">Category 3</li>
+              <li class="nav__li">Category 4</li>
+              <li class="nav__li">Category 5</li>
+              <li class="nav__li">Category 6</li>
+            </ul>
+          </section>
+          <section class="menu display--fl fl--align-c fl--just-bet"><a class="menu__link font font--med text--small color--dark-gray cursor--pointer" href="#">Super Deals</a><a class="menu__link font font--med text--small color--dark-gray cursor--pointer" href="#">Featured Brands</a><a class="menu__link font font--med text--small color--dark-gray cursor--pointer" href="#">Collections</a><a class="menu__link font font--med text--small color--dark-gray cursor--pointer" href="#">Bestselling</a></section>
+          <section class="nav__select display--fl fl--align-c"><a class="help nav__link font font--med text--small color--gray cursor--pointer" href="#">Help</a>
+            <ul class="nav__list">
+              <li class="nav__li font font--med text--small color--gray cursor--pointer">Item 1</li>
+              <li class="nav__li font font--med text--small color--gray cursor--pointer">Item 2</li>
+            </ul>
+          </section>
+          <section class="nav__select display--fl fl--align-c"><a class="currency nav__link font font--med text--small color--gray cursor--pointer" href="#">USD</a>
+            <ul class="nav__list">
+              <li class="nav__li font font--med text--small color--gray cursor--pointer">USD</li>
+              <li class="nav__li font font--med text--small color--gray cursor--pointer">RUB</li>
+              <li class="nav__li font font--med text--small color--gray cursor--pointer">UAH</li>
+            </ul>
+          </section>
+          <section class="nav__select display--fl fl--align-c"><a class="lang nav__link font font--med text--small color--gray cursor--pointer" href="#">Language</a>
+            <ul class="nav__list">
+              <li class="nav__li font font--med text--small color--gray cursor--pointer">en</li>
+              <li class="nav__li font font--med text--small color--gray cursor--pointer">ru</li>
+              <li class="nav__li font font--med text--small color--gray cursor--pointer">ua</li>
+            </ul>
+          </section>
         </section>
       </section>
     </nav>
