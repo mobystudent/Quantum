@@ -1,5 +1,15 @@
 .wrap {
+    &--header {
+        padding-right: 30px;
+        padding-left: 15px;
+    }
+
     &--nav {
         height: 61px;
+    }
+
+    &--img {
+        width: 20px;
+        height: 20px;
     }
 }

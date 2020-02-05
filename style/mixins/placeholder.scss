@@ -1,0 +1,31 @@
+@mixin placeholder($font-size, $color) {
+    &::placeholder {
+        color: $color;
+        opacity: 1;
+        font: 500 $font-size "Roboto", sans-serif;
+    }
+
+    &::-ms-placeholder {
+        color: $color;
+        opacity: 1;
+        font: 500 $font-size "Roboto", sans-serif;
+    }
+
+    &:-ms-input-placeholder {
+        color: $color;
+        opacity: 1;
+        font: 500 $font-size "Roboto", sans-serif;
+    }
+
+    &:focus:placeholder {
+        opacity: 0;
+    }
+
+    &:focus::-ms-placeholder {
+        opacity: 0;
+    }
+
+    &:focus:-ms-input-placeholder {
+        opacity: 0;
+    }
+}

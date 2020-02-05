@@ -1,0 +1,21 @@
+.border {
+    &--gray {
+        border: 2px solid $dimWhite;
+    }
+
+    &--l-gray {
+        border-left: 2px solid $dimWhite;
+    }
+
+    &--r-gray {
+        border-right: 2px solid $dimWhite;
+    }
+
+    &--t-gray {
+        border-top: 2px solid $dimWhite;
+    }
+
+    &--b-gray {
+        border-bottom: 2px solid $dimWhite;
+    }
+}

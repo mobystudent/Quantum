@@ -1,0 +1,13 @@
+.inscrip {
+    margin-left: 17px;
+
+    &--busket {
+        margin-left: 20px;
+    }
+
+    &__count {
+        &--busket {
+            margin-right: 3px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.personal {
+    margin-left: 30px;
+    flex: 1 0 auto;
+
+    &__item {
+        padding: 0 10px;
+        margin-right: 20px;
+
+        &--busket {
+            margin-right: 12px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

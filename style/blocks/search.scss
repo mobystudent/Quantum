@@ -1,0 +1,9 @@
+.search {
+    height: 50px;
+
+    &__cat {
+        border-left: 2px solid $dimWhite;
+        border-right: 2px solid $dimWhite;
+        padding: 16px 38px;
+    }
+}

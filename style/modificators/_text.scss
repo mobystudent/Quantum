@@ -1,5 +1,13 @@
 .text {
+    &--large {
+        font-size: 22px;
+    }
+
     &--small {
         font-size: 14px;
+    }
+
+    &--extra-small {
+        font-size: 10px;
     }
 }
