@@ -1,0 +1,13 @@
+.color {
+    &--dim-white {
+        color: $dimWhite;
+    }
+
+    &--gray {
+        color: $gray;
+    }
+
+    &--dark-gray {
+        color: $darkGray;
+    }
+}
