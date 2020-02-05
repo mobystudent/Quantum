@@ -2,29 +2,29 @@ header.header
    .container.margin--center
       .wrap.wrap--header.display--fl
          a.logo.font.font--black.font--upper.text--large.color--nearly-black.ls--08em(href="/") Quantum
-         section.search.display--fl.border--gray
+         section.search.display--fl.border--dim-white
             input.input.input--search(type="search" placeholder="Search goods")
-            section.search__cat
-               a.search__link.font.font--black.text--large.ls--015em.color--gray.text--extra-small.border--l-gray.border--r-gray.font--upper.position--r(href="#") Category
+            section.search__cat.border--l-dim-white.border--r-dim-white
+               a.search__link.font.font--black.text--large.ls--015em.color--gray.text--extra-small.border--l-dim-white.border--r-dim-white.font--upper.position--r(href="#") Category
                ul.search__list.font.font--black.text--large.color--gray.text--extra-small.display--none
                   - for (let i = 0; i < 5; i++)
                      li.search__li Category #{i+1}
             button.search__btn.btn.btn--search
-               img(src="img/search.png")
+               img(src="img/search.png" alt="search")
          section.personal.display--fl.fl--align-c.fl--just-end
             article.user-busket.display--fl.personal__item.personal__item--busket.fl--align-c.cursor--pointer
-               .wrap.wrap--img.wrap--img-busket.position--r
+               .wrap.wrap--img.wrap--img-pers.wrap--img-busket.position--r
                   img(src="img/shopping-cart.png" alt="shopping-cart")
                .inscrip.inscrip--busket.font.font--med.color--dark-gray.text--small
                   span.inscrip__count.inscrip__count--busket 2
                   span.inscrip__text Items
             article.wish-list.display--fl.personal__item.fl--align-c.cursor--pointer
-               .wrap.wrap--img
+               .wrap.wrap--img.wrap--img-pers
                   img(src="img/like.png" alt="like")
                .inscrip.font.font--med.color--dark-gray.text--small
                   span.inscrip__text Wish List
             article.sign-in.display--fl.personal__item.fl--align-c.cursor--pointer
-               .wrap.wrap--img
+               .wrap.wrap--img.wrap--img-pers
                   img(src="img/user.png" alt="user")
                .inscrip.font.font--med.color--dark-gray.text--small
                   span.inscrip__text Sing in

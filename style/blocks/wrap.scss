@@ -9,19 +9,21 @@
     }
 
     &--img {
-        width: 20px;
-        height: 20px;
+        &-pers {
+            width: 20px;
+            height: 20px;
 
-        &-busket {
-            &:before {
-                content: '';
-                position: absolute;
-                top: -9px;
-                right: -7px;
-                width: 6px;
-                height: 6px;
-                border-radius: 50%;
-                background: $blue;
+            &-busket {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: -9px;
+                    right: -7px;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    background: $blue;
+                }
             }
         }
     }

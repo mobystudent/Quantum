@@ -7,4 +7,22 @@ block content
    include includes/header.pug
    include includes/nav.pug
    
-   
+   main.content
+      section.page-info
+         .container.margin--center
+            .wrap.display--fl.fl--just-bet.fl--align-c
+               article.breadcrumbs.display--fl
+                  a.breadcrumbs__link.color--dim-gray.font.font--med.text--pre-small.position--r(href="/") Main
+                  a.breadcrumbs__link.color--dim-gray.font.font--med.text--pre-small.position--r(href="#") Mobile phones
+                  a.breadcrumbs__link.color--dim-gray.font.font--med.text--pre-small.position--r(href="#") Apple
+                  span.breadcrumbs__page.color--med-gray.font.font--med.text--pre-small Apple iPhone 7, 128 GB
+               article.share.display--fl.fl--align-c
+                  span.share__title.color--gray-light.font.font--med.text--pre-small Share:
+                  section.share__item.display--fl.fl--align-c
+                     .wrap.wrap--img
+                        img(src="../img/facebook.png" alt="facebook")
+                     span.share__count.share__count--fb.color--gray-light.font.font--med.text--pre-small.border--dim-white.position--r 45
+                  section.share__item.display--fl.fl--align-c
+                     .wrap.wrap--img
+                        img(src="../img/twitter.png" alt="twitter")
+                     span.share__count.color--gray-light.font.font--med.text--pre-small.border--dim-white.position--r 12

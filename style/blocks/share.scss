@@ -1,0 +1,50 @@
+.share {
+    margin-right: 15px;
+
+    &__title {
+        margin-right: 31px;
+    }
+
+    &__item {
+        margin-right: 26px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__count {
+        border-radius: 2px;
+        padding: 3px 7px;
+        margin-left: 19px;
+
+        &--fb {
+            margin-left: 24px;
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 0;
+            height: 0;
+            display: block;
+            transform: translateY(-50%);
+        }
+
+        &:before {
+            left: -10px;
+            z-index: 1;
+            border: 6px solid transparent;
+            border-right: 4px solid $white;
+        }
+
+        &:after {
+            left: -15px;
+            z-index: 0;
+            border: 8px solid transparent;
+            border-right: 6px solid $dimWhite;
+        }
+    }
+}

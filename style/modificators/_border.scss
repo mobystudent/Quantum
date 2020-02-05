@@ -1,21 +1,21 @@
 .border {
-    &--gray {
+    &--dim-white {
         border: 2px solid $dimWhite;
     }
 
-    &--l-gray {
+    &--l-dim-white {
         border-left: 2px solid $dimWhite;
     }
 
-    &--r-gray {
+    &--r-dim-white {
         border-right: 2px solid $dimWhite;
     }
 
-    &--t-gray {
+    &--t-dim-white {
         border-top: 2px solid $dimWhite;
     }
 
-    &--b-gray {
+    &--b-dim-white {
         border-bottom: 2px solid $dimWhite;
     }
 }

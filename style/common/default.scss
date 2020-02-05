@@ -2,6 +2,10 @@ body {
     width: 1440px;
 }
 
+.content {
+    flex: 1 0 auto;
+}
+
 .margin {
     &--center {
         margin: 0 auto;
