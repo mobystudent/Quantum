@@ -1,0 +1,40 @@
+.pagination {
+    padding: 24px 34px 19px 43px;
+
+    &__link {
+        &--arrow {
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                width: 14px;
+                height: 14px;
+
+                background: url("../img/icons/arrow-side.png") no-repeat;
+                background-size: cover;
+            }
+
+            &-prev {
+                padding-left: 33px;
+
+                &:before {
+                    left: 0;
+                    transform: translateY(-50%) rotate(180deg);
+                }
+            }
+
+            &-next {
+                padding-right: 33px;
+
+                &:before {
+                    right: 0;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+
+    &__pages {
+        padding-right: 29px;
+    }
+}
