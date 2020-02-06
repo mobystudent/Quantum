@@ -32,7 +32,7 @@ gulp.task('style', () => {
 });
 
 gulp.task('image', () => {
-    return gulp.src('img/*')
+    return gulp.src('img/**')
         .pipe(imagemin({
             progressive: true
         }))
@@ -44,7 +44,9 @@ gulp.task('watch', () => {
         server: "./build"
     });
 
-    gulp.watch('img/*', gulp.series('image'));
+    gulp.watch('img/**', gulp.series('image'));
     gulp.watch('style/**/*.scss', gulp.series('style'));
     gulp.watch('view/**/*.pug', gulp.series('view'));
 });
+
+gulp.task('build', gulp.series(gulp.parallel('image','style', 'view'), 'watch'));

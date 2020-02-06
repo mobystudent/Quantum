@@ -1,0 +1,12 @@
+.page-title {
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -51px;
+        left: 50%;
+        width: 68px;
+        height: 2px;
+        transform: translateX(-50%);
+        background: $blue;
+    }
+}

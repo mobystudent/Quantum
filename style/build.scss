@@ -19,6 +19,9 @@
 @import "modificators/_border.scss";
 @import "modificators/_position.scss";
 @import "modificators/_indent.scss";
+@import "modificators/_title.scss";
+@import "modificators/_align.scss";
+@import "modificators/_background.scss";
 
 //Blocks
 @import "blocks/header.scss";
@@ -34,3 +37,11 @@
 @import "blocks/inscrip.scss";
 @import "blocks/breadcrumbs.scss";
 @import "blocks/share.scss";
+@import "blocks/page-title.scss";
+@import "blocks/sort.scss";
+@import "blocks/filters.scss";
+@import "blocks/view.scss";
+@import "blocks/item.scss";
+@import "blocks/sale.scss";
+@import "blocks/rating.scss";
+@import "blocks/price.scss";

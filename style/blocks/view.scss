@@ -1,0 +1,32 @@
+.view {
+    &__btn {
+        height: 100%;
+        width: 58px;
+    }
+
+    &__img {
+        &--grid {
+            height: 13px;
+            width: 20px;
+            background: url("../img/icons/grid.png") no-repeat;
+            background-size: cover;
+
+            &-active {
+                background: url("../img/icons/grid-active.png") no-repeat;
+                background-size: cover;
+            }
+        }
+
+        &--list {
+            height: 14px;
+            width: 17px;
+            background: url("../img/icons/list.png") no-repeat;
+            background-size: cover;
+
+            &-active {
+                background: url("../img/icons/list-active.png") no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}

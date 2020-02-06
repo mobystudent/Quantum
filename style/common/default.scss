@@ -2,8 +2,9 @@ body {
     width: 1440px;
 }
 
-.content {
+.main {
     flex: 1 0 auto;
+    background: $darkWhite;
 }
 
 .margin {

@@ -1,5 +1,18 @@
 .indent {
-    &--nav {
-        margin-bottom: 46px;
+    &--page-info {
+        padding-top: 46px;
+        margin-bottom: 80px;
+    }
+
+    &--page-title {
+        margin-bottom: 110px;
+    }
+
+    &--goods-filters {
+        margin-bottom: 30px;
+    }
+
+    &--rating {
+        margin-bottom: 25px;
     }
 }

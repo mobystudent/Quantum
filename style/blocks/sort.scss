@@ -1,0 +1,34 @@
+.sort {
+    padding-left: 33px;
+    padding-right: 50px;
+
+    &__item {
+        padding-top: 22px;
+        padding-bottom: 22px;
+        color: $darkGray;
+        font-weight: 500;
+
+        &--active {
+            color: $blue;
+            font-weight: 700;
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background: $blue;
+            }
+        }
+
+        &--pop {
+            margin-right: 43px;
+        }
+
+        &--low {
+            margin-right: 50px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.item {
+    background: $white;
+    border-radius: 5px;
+    width: 255px;
+    padding: 19px 20px 33px;
+    margin-bottom: 30px;
+
+    &__header {
+        margin-bottom: 28px;
+    }
+
+    &__title {
+        padding-left: 10px;
+        margin-bottom: 22px;
+    }
+}

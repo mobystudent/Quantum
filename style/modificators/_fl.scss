@@ -3,8 +3,20 @@
         align-items: center;
     }
 
-    &--just-bet {
+    &--just-b {
         justify-content: space-between;
+    }
+
+    &--just-c {
+        justify-content: center;
+    }
+
+    &--col-nowr {
+        flex-flow: column nowrap;
+    }
+
+    &--row-wr {
+        flex-flow: row wrap;
     }
 
     &--just-end {
