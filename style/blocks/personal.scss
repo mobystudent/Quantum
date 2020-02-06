@@ -1,6 +1,5 @@
 .personal {
     margin-left: 30px;
-    flex: 1 0 auto;
 
     &__item {
         padding: 0 10px;
@@ -12,6 +11,22 @@
 
         &:last-child {
             margin-right: 0;
+        }
+    }
+
+    &__span {
+        &--per {
+            margin-left: 17px;
+        }
+    }
+
+    &__text {
+        margin-left: 20px;
+    }
+
+    &__count {
+        &--busket {
+            margin-right: 3px;
         }
     }
 }

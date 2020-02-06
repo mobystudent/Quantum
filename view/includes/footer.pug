@@ -1,0 +1,37 @@
+footer.footer
+   section.footer__nav.border--b-dim-white
+      section.container.margin--center
+         section.wrap.wrap--footer.display--fl
+            section.info.display--fl.fl--align-c.fl--just-b
+               a.logo.font.font--black.font--upper.text--large.color--nearly-black.ls--08em(href="/") Quantum
+               section.menu.menu--footer.display--fl.fl--align-c.fl--just-c.fl--grow-1
+                  a.menu__link.menu__link--footer.menu__link--sub.font.font--med.text--medium.color--med-gray.cursor--pointer.position--r(href="#") Shop
+                  a.menu__link.menu__link--footer.font.font--med.text--medium.color--med-gray.cursor--pointer(href="#") Journal
+                  a.menu__link.menu__link--footer.font.font--med.text--medium.color--med-gray.cursor--pointer(href="#") About
+                  a.menu__link.menu__link--footer.font.font--med.text--medium.color--med-gray.cursor--pointer(href="#") Contacts
+               section.social.display--fl.fl--align-c
+                  article.icon.icon--social.cursor--pointer
+                     img.icon__img(src="../img/icons/facebook-no.png" alt="facebook-no icon")
+                  article.icon.icon--social.cursor--pointer
+                     img.icon__img(src="../img/icons/twitter-no.png" alt="twitter-no icon")
+                  article.icon.icon--social.cursor--pointer
+                     img.icon__img(src="../img/icons/insta.png" alt="insta icon")
+                  article.icon.icon--social.cursor--pointer
+                     img.icon__img(src="../img/icons/youtube.png" alt="youtube icon")
+                        
+   section.footer__info.border--b-dim-white
+      section.container.margin--center
+         section.wrap.wrap--footer.display--fl
+            section.official.display--fl.fl--align-c
+               article.copyright
+                  span.copyright__text.font.font--med.color--dark-gray.text--small.color--light-gray &copy; 2016. Quantum UI kit
+               section.official__private-links.display--fl.fl--align-c.fl--grow-1
+                  a.official__link.font.font--med.color--dark-gray.text--small.color--light-gray(href="#") Privacy Policy
+                  a.official__link.font.font--med.color--dark-gray.text--small.color--light-gray(href="#") Terms of Use
+               section.official__pay.display--fl.fl--align-c
+                  span.official__title.official__title--pay.font.font--med.color--dark-gray.text--small.color--light-gray Accepted payment methods
+                  section.official__cards.display--fl.fl--align-c
+                     
+                     - for (let i = 0; i < 4; i++)
+                        article.icon.icon--card
+                           img.icon__img(src=`../img/card-${i+1}.png` alt=`payment card ${i+1}`)

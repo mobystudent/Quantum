@@ -9,433 +9,469 @@
     <link href="css/build.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
-      <div class="container margin--center">
-        <div class="wrap wrap--header display--fl"><a class="logo font font--black font--upper text--large color--nearly-black ls--08em" href="/">Quantum</a>
-          <section class="search display--fl border--dim-white">
-            <input class="input input--search" type="search" placeholder="Search goods">
-            <section class="search__cat border--l-dim-white border--r-dim-white"><a class="search__link font font--black text--large ls--015em color--gray text--extra-small border--l-dim-white border--r-dim-white font--upper position--r" href="#">Category</a>
-              <ul class="search__list font font--black text--large color--gray text--extra-small display--none">
-                <li class="search__li">Category 1</li>
-                <li class="search__li">Category 2</li>
-                <li class="search__li">Category 3</li>
-                <li class="search__li">Category 4</li>
-                <li class="search__li">Category 5</li>
-              </ul>
+    <article class="wrapper display--fl fl--col-nowr">
+      <header class="header">
+        <section class="container margin--center">
+          <section class="wrap wrap--header display--fl"><a class="logo font font--black font--upper text--large color--nearly-black ls--08em" href="/">Quantum</a>
+            <form class="form form--search display--fl border--dim-white">
+              <input class="input input--search" type="search" placeholder="Search goods">
+              <section class="form__cat border--l-dim-white border--r-dim-white"><a class="form__link font font--black text--large ls--015em color--gray text--extra-small border--l-dim-white border--r-dim-white font--upper position--r" href="#">Category</a>
+                <ul class="form__list font font--black text--large color--gray text--extra-small display--none">
+                  <li class="form__li">Category 1</li>
+                  <li class="form__li">Category 2</li>
+                  <li class="form__li">Category 3</li>
+                  <li class="form__li">Category 4</li>
+                  <li class="form__li">Category 5</li>
+                </ul>
+              </section>
+              <button class="form__btn btn btn--search"><img class="form__img" src="img/icons/search.png" alt="search icon"></button>
+            </form>
+            <section class="personal display--fl fl--align-c fl--just-end fl--grow-1">
+              <section class="icon icon--busket display--fl personal__item personal__item--busket fl--align-c cursor--pointer">
+                <article class="icon icon--pers icon--pers-busket position--r"><img class="icon__img" src="img/icons/shop-cart.png" alt="shop-cart icon"></article>
+                <section class="personal__text font font--med color--dark-gray text--small"><span class="personal__count personal__count--busket">2</span><span class="personal__span">Items</span></section>
+              </section>
+              <section class="personal__item personal__item--wish-list display--fl personal__item fl--align-c cursor--pointer">
+                <article class="icon icon--pers"><img class="icon__img" src="img/icons/like.png" alt="like icon"></article><span class="personal__span personal__span--per font font--med color--dark-gray text--small">Wish List</span>
+              </section>
+              <section class="personal__item personal__item--sign-in display--fl personal__item fl--align-c cursor--pointer">
+                <article class="icon icon--pers"><img class="icon__img" src="img/icons/user.png" alt="user icon"></article><span class="personal__span personal__span--per font font--med color--dark-gray text--small">Sing in</span>
+              </section>
             </section>
-            <button class="search__btn btn btn--search"><img src="img/icons/search.png" alt="search icon"></button>
           </section>
-          <section class="personal display--fl fl--align-c fl--just-end">
-            <article class="user-busket display--fl personal__item personal__item--busket fl--align-c cursor--pointer">
-              <div class="wrap wrap--img wrap--img-pers wrap--img-busket position--r"><img src="img/icons/shop-cart.png" alt="shop-cart icon"></div>
-              <div class="inscrip inscrip--busket font font--med color--dark-gray text--small"><span class="inscrip__count inscrip__count--busket">2</span><span class="inscrip__text">Items</span></div>
-            </article>
-            <article class="wish-list display--fl personal__item fl--align-c cursor--pointer">
-              <div class="wrap wrap--img wrap--img-pers"><img src="img/icons/like.png" alt="like icon"></div>
-              <div class="inscrip font font--med color--dark-gray text--small"><span class="inscrip__text">Wish List</span></div>
-            </article>
-            <article class="sign-in display--fl personal__item fl--align-c cursor--pointer">
-              <div class="wrap wrap--img wrap--img-pers"><img src="img/icons/user.png" alt="user icon"></div>
-              <div class="inscrip font font--med color--dark-gray text--small"><span class="inscrip__text">Sing in</span></div>
-            </article>
-          </section>
-        </div>
-      </div>
-    </header>
-    <nav class="nav border--t-dim-white border--b-dim-white">
-      <div class="container margin--center">
-        <div class="wrap wrap--nav display--fl">
-          <section class="nav__select nav__select--cat border--r-dim-white border--l-dim-white"><a class="nav__link nav__link--cat cursor--pointer" href="#"><span class="nav__span nav__span--cat font font--med text--small color--dark-gray position--r">All Categories</span></a>
-            <ul class="nav__list nav__list--cat display--none">
-              <li class="nav__li">Category 1</li>
-              <li class="nav__li">Category 2</li>
-              <li class="nav__li">Category 3</li>
-              <li class="nav__li">Category 4</li>
-              <li class="nav__li">Category 5</li>
-              <li class="nav__li">Category 6</li>
-            </ul>
-          </section>
-          <section class="menu display--fl fl--align-c fl--just-b"><a class="menu__link font font--med text--small color--dark-gray cursor--pointer" href="#">Super Deals</a><a class="menu__link font font--med text--small color--dark-gray cursor--pointer" href="#">Featured Brands</a><a class="menu__link font font--med text--small color--dark-gray cursor--pointer" href="#">Collections</a><a class="menu__link font font--med text--small color--dark-gray cursor--pointer" href="#">Bestselling</a></section>
-          <div class="menu-filter display--fl">
-            <section class="nav__select display--fl fl--align-c border--l-dim-white"><a class="nav__link cursor--pointer" href="#"><span class="nav__span nav__span--filter font font--med text--small color--gray position--r">Help</span></a>
-              <ul class="nav__list display--none">
-                <li class="nav__li font font--med text--small color--gray cursor--pointer">Item 1</li>
-                <li class="nav__li font font--med text--small color--gray cursor--pointer">Item 2</li>
+        </section>
+      </header>
+      <nav class="nav border--t-dim-white border--b-dim-white">
+        <div class="container margin--center">
+          <div class="wrap wrap--nav display--fl">
+            <section class="nav__select nav__select--cat border--r-dim-white border--l-dim-white"><a class="nav__link nav__link--cat cursor--pointer" href="#"><span class="nav__span nav__span--cat font font--med text--small color--dark-gray position--r">All Categories</span></a>
+              <ul class="nav__list nav__list--cat display--none">
+                <li class="nav__li">Category 1</li>
+                <li class="nav__li">Category 2</li>
+                <li class="nav__li">Category 3</li>
+                <li class="nav__li">Category 4</li>
+                <li class="nav__li">Category 5</li>
+                <li class="nav__li">Category 6</li>
               </ul>
             </section>
-            <section class="nav__select display--fl fl--align-c border--l-dim-white"><a class="nav__link cursor--pointer" href="#"><span class="nav__span nav__span--filter font font--med text--small color--gray position--r">USD</span></a>
-              <ul class="nav__list display--none">
-                <li class="nav__li font font--med text--small color--gray cursor--pointer">USD</li>
-                <li class="nav__li font font--med text--small color--gray cursor--pointer">RUB</li>
-                <li class="nav__li font font--med text--small color--gray cursor--pointer">UAH</li>
-              </ul>
+            <section class="menu menu--nav display--fl fl--align-c fl--grow-1"><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer" href="#">Super Deals</a><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer" href="#">Featured Brands</a><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer" href="#">Collections</a><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer" href="#">Bestselling</a>
             </section>
-            <section class="nav__select display--fl fl--align-c border--l-dim-white border--r-dim-white"><a class="nav__link cursor--pointer" href="#"><span class="nav__span nav__span--filter font font--med text--small color--gray position--r">Language</span></a>
-              <ul class="nav__list display--none">
-                <li class="nav__li font font--med text--small color--gray cursor--pointer">en</li>
-                <li class="nav__li font font--med text--small color--gray cursor--pointer">ru</li>
-                <li class="nav__li font font--med text--small color--gray cursor--pointer">ua</li>
-              </ul>
-            </section>
+            <div class="menu-filter display--fl">
+              <section class="nav__select display--fl fl--align-c border--l-dim-white"><a class="nav__link cursor--pointer" href="#"><span class="nav__span nav__span--filter font font--med text--small color--gray position--r">Help</span></a>
+                <ul class="nav__list display--none">
+                  <li class="nav__li font font--med text--small color--gray cursor--pointer">Item 1</li>
+                  <li class="nav__li font font--med text--small color--gray cursor--pointer">Item 2</li>
+                </ul>
+              </section>
+              <section class="nav__select display--fl fl--align-c border--l-dim-white"><a class="nav__link cursor--pointer" href="#"><span class="nav__span nav__span--filter font font--med text--small color--gray position--r">USD</span></a>
+                <ul class="nav__list display--none">
+                  <li class="nav__li font font--med text--small color--gray cursor--pointer">USD</li>
+                  <li class="nav__li font font--med text--small color--gray cursor--pointer">RUB</li>
+                  <li class="nav__li font font--med text--small color--gray cursor--pointer">UAH</li>
+                </ul>
+              </section>
+              <section class="nav__select display--fl fl--align-c border--l-dim-white border--r-dim-white"><a class="nav__link cursor--pointer" href="#"><span class="nav__span nav__span--filter font font--med text--small color--gray position--r">Language</span></a>
+                <ul class="nav__list display--none">
+                  <li class="nav__li font font--med text--small color--gray cursor--pointer">en</li>
+                  <li class="nav__li font font--med text--small color--gray cursor--pointer">ru</li>
+                  <li class="nav__li font font--med text--small color--gray cursor--pointer">ua</li>
+                </ul>
+              </section>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <main class="main">
-      <section class="page-info indent--page-info">
-        <section class="container margin--center">
-          <section class="wrap display--fl fl--just-b fl--align-c">
-            <article class="breadcrumbs display--fl fl--align-c"><a class="breadcrumbs__link color--dim-gray font font--med text--pre-small position--r" href="/">Main</a><a class="breadcrumbs__link color--dim-gray font font--med text--pre-small position--r" href="#">Mobile phones</a><a class="breadcrumbs__link color--dim-gray font font--med text--pre-small position--r" href="#">Apple</a><span class="breadcrumbs__page color--med-gray font font--med text--pre-small">Apple iPhone 7, 128 GB</span></article>
-            <article class="share display--fl fl--align-c"><span class="share__title color--gray-light font font--med text--pre-small">Share:</span>
-              <section class="share__item display--fl fl--align-c">
-                <article class="wrap wrap--img"><img src="../img/icons/facebook.png" alt="facebook icon"></article><span class="share__count share__count--fb color--gray-light font font--med text--pre-small border--dim-white position--r">45</span>
-              </section>
-              <section class="share__item display--fl fl--align-c">
-                <article class="wrap wrap--img"><img src="../img/icons/twitter.png" alt="twitter icon"></article><span class="share__count color--gray-light font font--med text--pre-small border--dim-white position--r">12</span>
-              </section>
-            </article>
-          </section>
-        </section>
-      </section>
-      <h1 class="page-title color--med-gray font font--reg title--medium position--r align--center indent--page-title">Smartphones</h1>
-      <section class="content">
-        <section class="container margin--center">
-          <section class="wrap wrap--content display--fl fl--align-st">
-            <aside class="filters background--block">
-              <section class="filters__item border--b-dim-white">
-                <h3 class="filters__title filters__title-active font font--med text--small color--med-gray position--r cursor--pointer">Price</h3>
-                <input class="input input--range filters__range" type="range">
-                <article class="interval display--fl fl--align-c fl--just-b indent--interval">
-                  <section class="interval__block interval__block-low border--dim-white"><span class="interval__span font font--med text--low-small color--med-gray">&#36; 38.72</span></section><small class="sign font font--med text--low-small color--med-gray">&ndash;</small>
-                  <section class="interval__block interval__block-high border--dim-white"><span class="interval__span font font--med text--low-small color--med-gray">&#36; 971.62</span></section>
-                </article>
-              </section>
-              <section class="filters__item border--b-dim-white">
-                <h3 class="filters__title filters__title-active font font--med text--small color--med-gray position--r cursor--pointer">Brand</h3>
-                <section class="filters__content display--fl fl--row-wr fl--just-b">
-                  <article class="checkbox indent--checkbox">
-                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="apple-br" name="brand" value="apple">
-                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="apple-br">Apple</label>
-                  </article>
-                  <article class="checkbox indent--checkbox">
-                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="sony-br" name="brand" value="sony">
-                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="sony-br">Sony</label>
-                  </article>
-                  <article class="checkbox indent--checkbox">
-                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="asus-br" name="brand" value="asus">
-                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="asus-br">Asus</label>
-                  </article>
-                  <article class="checkbox indent--checkbox">
-                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="lg-br" name="brand" value="lg">
-                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="lg-br">LG</label>
-                  </article>
-                  <article class="checkbox indent--checkbox">
-                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="lenovo-br" name="brand" value="lenovo">
-                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="lenovo-br">Lenovo</label>
-                  </article>
-                  <article class="checkbox indent--checkbox">
-                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="meizu-br" name="brand" value="meizu">
-                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="meizu-br">Meizu</label>
-                  </article>
-                  <article class="checkbox indent--checkbox">
-                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="xiaomi-br" name="brand" value="xiaomi">
-                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="xiaomi-br">Xiaomi</label>
-                  </article>
-                  <article class="checkbox indent--checkbox">
-                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="htc-br" name="brand" value="htc">
-                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="htc-br">HTC</label>
-                  </article>
-                </section><a class="show font font--black font--upper text--extra-small ls--01em color--gray cursor--pointer position--r display--in-bl">Show more</a>
-              </section>
-              <section class="filters__item border--b-dim-white">
-                <h3 class="filters__title filters__title-active font font--med text--small color--med-gray position--r cursor--pointer">Color</h3>
-                <section class="filters__content display--fl fl--row-wr fl--just-b">
-                  <article class="checkbox indent--checkbox">
-                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="ivory-clr" name="color" value="ivory">
-                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="ivory-clr">Ivory</label>
-                  </article>
-                  <article class="checkbox indent--checkbox">
-                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="deep grey-clr" name="color" value="deep grey">
-                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="deep grey-clr">Deep Grey</label>
-                  </article>
-                  <article class="checkbox indent--checkbox">
-                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="coffee-clr" name="color" value="coffee">
-                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="coffee-clr">Coffee</label>
-                  </article>
-                  <article class="checkbox indent--checkbox">
-                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="red-clr" name="color" value="red">
-                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="red-clr">Red</label>
-                  </article>
-                  <article class="checkbox indent--checkbox">
-                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="pink-clr" name="color" value="pink">
-                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="pink-clr">Pink</label>
-                  </article>
-                  <article class="checkbox indent--checkbox">
-                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="yellow-clr" name="color" value="yellow">
-                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="yellow-clr">Yellow</label>
-                  </article>
-                  <article class="checkbox indent--checkbox">
-                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="green-clr" name="color" value="green">
-                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="green-clr">Green</label>
-                  </article>
-                  <article class="checkbox indent--checkbox">
-                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="black-clr" name="color" value="black">
-                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="black-clr">Black</label>
-                  </article>
-                </section><a class="show font font--black font--upper text--extra-small ls--01em color--gray cursor--pointer position--r display--in-bl">Show more</a>
-              </section>
-              <section class="filters__item border--b-dim-white">
-                <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Body Weight</h3>
-              </section>
-              <section class="filters__item border--b-dim-white">
-                <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">CPU Cores</h3>
-              </section>
-              <section class="filters__item border--b-dim-white">
-                <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">CPU Type</h3>
-              </section>
-              <section class="filters__item border--b-dim-white">
-                <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Screen Size</h3>
-              </section>
-              <section class="filters__item border--b-dim-white">
-                <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Operation System</h3>
-              </section>
-              <section class="filters__item border--b-dim-white">
-                <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Cellular</h3>
-              </section>
-              <section class="filters__item border--b-dim-white">
-                <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Ram</h3>
-              </section>
-            </aside>
-            <article class="goods">
-              <header class="goods__filters display--fl fl--just-b indent--goods-filters background--block">
-                <article class="sort display--fl fl--align-c"><a class="sort__item sort__item--active sort__item--pop font text--pre-small cursor--pointer position--r" href="#">Popular products</a><a class="sort__item sort__item--low font text--pre-small cursor--pointer position--r" href="#">Low price</a><a class="sort__item font text--pre-small cursor--pointer position--r" href="#">High price</a></article>
-                <article class="view display--fl fl--align-c"><a class="view__btn view__btn--grid border--l-dim-white display--fl fl--align-c fl--just-c" href="#"><span class="view__img view__img--grid view__img--grid-active"></span></a><a class="view__btn view__btn--list border--l-dim-white display--fl fl--align-c fl--just-c" href="#"><span class="view__img view__img--list"></span></a></article>
-              </header>
-              <main class="goods__content display--fl fl--row-wr fl--just-b">
-                <article class="item display--fl fl--col-nowr background--block">
-                  <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
-                    <section class="item__info display--fl fl--just-b fl--align-c">
-                      <article class="wrap wrap--img-list cursor--pointer"><img src="../img/icons/list-2.png" alt="list icon"></article>
-                      <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/like.png" alt="like icon"></article>
-                    </section>
-                  </header>
-                  <section class="wrap wrap--img-item display--fl fl--just-c"><img src="../img/phone-1.jpg" alt="phone 1"></section>
-                  <section class="item__title">
-                    <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
-                  </section>
-                  <section class="rating display--fl fl--align-c fl--just-c indent--rating">
-                    <section class="rating__stars display--fl fl--just-c">
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-half.png" alt="star-half icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-empty.png" alt="star-empty icon"></article>
-                    </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
-                  </section>
-                  <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
-                    <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/shop-cart-full.png" alt="shop-cart-full"></article>
-                  </section>
-                </article>
-                <article class="item display--fl fl--col-nowr background--block">
-                  <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
-                    <section class="item__info display--fl fl--just-b fl--align-c">
-                      <article class="wrap wrap--img-list cursor--pointer"><img src="../img/icons/list-2.png" alt="list icon"></article>
-                      <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/like.png" alt="like icon"></article>
-                    </section>
-                  </header>
-                  <section class="wrap wrap--img-item display--fl fl--just-c"><img src="../img/phone-2.jpg" alt="phone 2"></section>
-                  <section class="item__title">
-                    <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
-                  </section>
-                  <section class="rating display--fl fl--align-c fl--just-c indent--rating">
-                    <section class="rating__stars display--fl fl--just-c">
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-half.png" alt="star-half icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-empty.png" alt="star-empty icon"></article>
-                    </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
-                  </section>
-                  <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
-                    <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/shop-cart-full.png" alt="shop-cart-full"></article>
-                  </section>
-                </article>
-                <article class="item display--fl fl--col-nowr background--block">
-                  <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
-                    <section class="item__info display--fl fl--just-b fl--align-c">
-                      <article class="wrap wrap--img-list cursor--pointer"><img src="../img/icons/list-2.png" alt="list icon"></article>
-                      <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/like.png" alt="like icon"></article>
-                    </section>
-                  </header>
-                  <section class="wrap wrap--img-item display--fl fl--just-c"><img src="../img/phone-3.jpg" alt="phone 3"></section>
-                  <section class="item__title">
-                    <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
-                  </section>
-                  <section class="rating display--fl fl--align-c fl--just-c indent--rating">
-                    <section class="rating__stars display--fl fl--just-c">
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-half.png" alt="star-half icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-empty.png" alt="star-empty icon"></article>
-                    </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
-                  </section>
-                  <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
-                    <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/shop-cart-full.png" alt="shop-cart-full"></article>
-                  </section>
-                </article>
-                <article class="item display--fl fl--col-nowr background--block">
-                  <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
-                    <section class="item__info display--fl fl--just-b fl--align-c">
-                      <article class="wrap wrap--img-list cursor--pointer"><img src="../img/icons/list-2.png" alt="list icon"></article>
-                      <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/like.png" alt="like icon"></article>
-                    </section>
-                  </header>
-                  <section class="wrap wrap--img-item display--fl fl--just-c"><img src="../img/phone-4.jpg" alt="phone 4"></section>
-                  <section class="item__title">
-                    <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
-                  </section>
-                  <section class="rating display--fl fl--align-c fl--just-c indent--rating">
-                    <section class="rating__stars display--fl fl--just-c">
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-half.png" alt="star-half icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-empty.png" alt="star-empty icon"></article>
-                    </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
-                  </section>
-                  <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
-                    <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/shop-cart-full.png" alt="shop-cart-full"></article>
-                  </section>
-                </article>
-                <article class="item display--fl fl--col-nowr background--block">
-                  <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
-                    <section class="item__info display--fl fl--just-b fl--align-c">
-                      <article class="wrap wrap--img-list cursor--pointer"><img src="../img/icons/list-2.png" alt="list icon"></article>
-                      <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/like.png" alt="like icon"></article>
-                    </section>
-                  </header>
-                  <section class="wrap wrap--img-item display--fl fl--just-c"><img src="../img/phone-5.jpg" alt="phone 5"></section>
-                  <section class="item__title">
-                    <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
-                  </section>
-                  <section class="rating display--fl fl--align-c fl--just-c indent--rating">
-                    <section class="rating__stars display--fl fl--just-c">
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-half.png" alt="star-half icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-empty.png" alt="star-empty icon"></article>
-                    </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
-                  </section>
-                  <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
-                    <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/shop-cart-full.png" alt="shop-cart-full"></article>
-                  </section>
-                </article>
-                <article class="item display--fl fl--col-nowr background--block">
-                  <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
-                    <section class="item__info display--fl fl--just-b fl--align-c">
-                      <article class="wrap wrap--img-list cursor--pointer"><img src="../img/icons/list-2.png" alt="list icon"></article>
-                      <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/like.png" alt="like icon"></article>
-                    </section>
-                  </header>
-                  <section class="wrap wrap--img-item display--fl fl--just-c"><img src="../img/phone-6.jpg" alt="phone 6"></section>
-                  <section class="item__title">
-                    <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
-                  </section>
-                  <section class="rating display--fl fl--align-c fl--just-c indent--rating">
-                    <section class="rating__stars display--fl fl--just-c">
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-half.png" alt="star-half icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-empty.png" alt="star-empty icon"></article>
-                    </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
-                  </section>
-                  <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
-                    <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/shop-cart-full.png" alt="shop-cart-full"></article>
-                  </section>
-                </article>
-                <article class="item display--fl fl--col-nowr background--block">
-                  <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
-                    <section class="item__info display--fl fl--just-b fl--align-c">
-                      <article class="wrap wrap--img-list cursor--pointer"><img src="../img/icons/list-2.png" alt="list icon"></article>
-                      <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/like.png" alt="like icon"></article>
-                    </section>
-                  </header>
-                  <section class="wrap wrap--img-item display--fl fl--just-c"><img src="../img/phone-7.jpg" alt="phone 7"></section>
-                  <section class="item__title">
-                    <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
-                  </section>
-                  <section class="rating display--fl fl--align-c fl--just-c indent--rating">
-                    <section class="rating__stars display--fl fl--just-c">
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-half.png" alt="star-half icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-empty.png" alt="star-empty icon"></article>
-                    </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
-                  </section>
-                  <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
-                    <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/shop-cart-full.png" alt="shop-cart-full"></article>
-                  </section>
-                </article>
-                <article class="item display--fl fl--col-nowr background--block">
-                  <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
-                    <section class="item__info display--fl fl--just-b fl--align-c">
-                      <article class="wrap wrap--img-list cursor--pointer"><img src="../img/icons/list-2.png" alt="list icon"></article>
-                      <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/like.png" alt="like icon"></article>
-                    </section>
-                  </header>
-                  <section class="wrap wrap--img-item display--fl fl--just-c"><img src="../img/phone-8.jpg" alt="phone 8"></section>
-                  <section class="item__title">
-                    <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
-                  </section>
-                  <section class="rating display--fl fl--align-c fl--just-c indent--rating">
-                    <section class="rating__stars display--fl fl--just-c">
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-half.png" alt="star-half icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-empty.png" alt="star-empty icon"></article>
-                    </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
-                  </section>
-                  <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
-                    <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/shop-cart-full.png" alt="shop-cart-full"></article>
-                  </section>
-                </article>
-                <article class="item display--fl fl--col-nowr background--block">
-                  <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
-                    <section class="item__info display--fl fl--just-b fl--align-c">
-                      <article class="wrap wrap--img-list cursor--pointer"><img src="../img/icons/list-2.png" alt="list icon"></article>
-                      <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/like.png" alt="like icon"></article>
-                    </section>
-                  </header>
-                  <section class="wrap wrap--img-item display--fl fl--just-c"><img src="../img/phone-9.jpg" alt="phone 9"></section>
-                  <section class="item__title">
-                    <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
-                  </section>
-                  <section class="rating display--fl fl--align-c fl--just-c indent--rating">
-                    <section class="rating__stars display--fl fl--just-c">
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-full.png" alt="star-full icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-half.png" alt="star-half icon"></article>
-                      <article class="wrap wrap--img-star"><img src="../img/icons/star-empty.png" alt="star-empty icon"></article>
-                    </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
-                  </section>
-                  <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
-                    <article class="wrap wrap--img cursor--pointer"><img src="../img/icons/shop-cart-full.png" alt="shop-cart-full"></article>
-                  </section>
-                </article>
-              </main>
-              <article class="pagination background--block display--fl fl--just-b fl--align-c"><a class="pagination__link pagination__link--arrow pagination__link--arrow-prev position--r font font--black font--upper text--extra-small color--gray ls--015em">Previous page</a>
-                <section class="pagination__pages"><a class="pagination__link pagination__link--num font font--med ls--015em text--small color--med-gray">1</a></section><a class="pagination__link pagination__link--arrow pagination__link--arrow-next position--r font font--black font--upper text--extra-small color--gray ls--015em">Next page</a>
+      </nav>
+      <main class="main indent--page-bot fl--grow-1">
+        <section class="page-info indent--page-info">
+          <section class="container margin--center">
+            <section class="wrap display--fl fl--just-b fl--align-c">
+              <article class="breadcrumbs display--fl fl--align-c"><a class="breadcrumbs__link color--dim-gray font font--med text--pre-small position--r" href="/">Main</a><a class="breadcrumbs__link color--dim-gray font font--med text--pre-small position--r" href="#">Mobile phones</a><a class="breadcrumbs__link color--dim-gray font font--med text--pre-small position--r" href="#">Apple</a><span class="breadcrumbs__page color--med-gray font font--med text--pre-small">Apple iPhone 7, 128 GB</span></article>
+              <article class="share display--fl fl--align-c"><span class="share__title color--gray-light font font--med text--pre-small">Share:</span>
+                <section class="share__item display--fl fl--align-c">
+                  <article class="icon"><img class="icon__img" src="../img/icons/facebook.png" alt="facebook icon"></article><span class="share__count share__count--fb color--gray-light font font--med text--pre-small border--dim-white position--r">45</span>
+                </section>
+                <section class="share__item display--fl fl--align-c">
+                  <article class="icon"><img class="icon__img" src="../img/icons/twitter.png" alt="twitter icon"></article><span class="share__count color--gray-light font font--med text--pre-small border--dim-white position--r">12</span>
+                </section>
               </article>
-            </article>
+            </section>
           </section>
         </section>
-      </section>
-    </main>
+        <h1 class="page-title color--med-gray font font--reg title--medium position--r align--center indent--page-title">Smartphones</h1>
+        <section class="content">
+          <section class="container margin--center">
+            <section class="wrap wrap--content display--fl fl--align-st">
+              <aside class="filters background--block">
+                <section class="filters__item border--b-dim-white">
+                  <h3 class="filters__title filters__title-active font font--med text--small color--med-gray position--r cursor--pointer">Price</h3>
+                  <input class="input input--range filters__range" type="range">
+                  <article class="interval display--fl fl--align-c fl--just-b indent--interval">
+                    <section class="interval__block interval__block-low border--dim-white"><span class="interval__span font font--med text--low-small color--med-gray">&#36; 38.72</span></section><small class="sign font font--med text--low-small color--med-gray">&ndash;</small>
+                    <section class="interval__block interval__block-high border--dim-white"><span class="interval__span font font--med text--low-small color--med-gray">&#36; 971.62</span></section>
+                  </article>
+                </section>
+                <section class="filters__item border--b-dim-white">
+                  <h3 class="filters__title filters__title-active font font--med text--small color--med-gray position--r cursor--pointer">Brand</h3>
+                  <section class="filters__content display--fl fl--row-wr fl--just-b">
+                    <article class="checkbox indent--checkbox">
+                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="apple-br" name="brand" value="apple">
+                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="apple-br">Apple</label>
+                    </article>
+                    <article class="checkbox indent--checkbox">
+                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="sony-br" name="brand" value="sony">
+                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="sony-br">Sony</label>
+                    </article>
+                    <article class="checkbox indent--checkbox">
+                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="asus-br" name="brand" value="asus">
+                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="asus-br">Asus</label>
+                    </article>
+                    <article class="checkbox indent--checkbox">
+                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="lg-br" name="brand" value="lg">
+                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="lg-br">LG</label>
+                    </article>
+                    <article class="checkbox indent--checkbox">
+                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="lenovo-br" name="brand" value="lenovo">
+                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="lenovo-br">Lenovo</label>
+                    </article>
+                    <article class="checkbox indent--checkbox">
+                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="meizu-br" name="brand" value="meizu">
+                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="meizu-br">Meizu</label>
+                    </article>
+                    <article class="checkbox indent--checkbox">
+                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="xiaomi-br" name="brand" value="xiaomi">
+                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="xiaomi-br">Xiaomi</label>
+                    </article>
+                    <article class="checkbox indent--checkbox">
+                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="htc-br" name="brand" value="htc">
+                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="htc-br">HTC</label>
+                    </article>
+                  </section><a class="show font font--black font--upper text--extra-small ls--01em color--gray cursor--pointer position--r display--in-bl">Show more</a>
+                </section>
+                <section class="filters__item border--b-dim-white">
+                  <h3 class="filters__title filters__title-active font font--med text--small color--med-gray position--r cursor--pointer">Color</h3>
+                  <section class="filters__content display--fl fl--row-wr fl--just-b">
+                    <article class="checkbox indent--checkbox">
+                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="ivory-clr" name="color" value="ivory">
+                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="ivory-clr">Ivory</label>
+                    </article>
+                    <article class="checkbox indent--checkbox">
+                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="deep grey-clr" name="color" value="deep grey">
+                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="deep grey-clr">Deep Grey</label>
+                    </article>
+                    <article class="checkbox indent--checkbox">
+                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="coffee-clr" name="color" value="coffee">
+                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="coffee-clr">Coffee</label>
+                    </article>
+                    <article class="checkbox indent--checkbox">
+                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="red-clr" name="color" value="red">
+                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="red-clr">Red</label>
+                    </article>
+                    <article class="checkbox indent--checkbox">
+                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="pink-clr" name="color" value="pink">
+                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="pink-clr">Pink</label>
+                    </article>
+                    <article class="checkbox indent--checkbox">
+                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="yellow-clr" name="color" value="yellow">
+                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="yellow-clr">Yellow</label>
+                    </article>
+                    <article class="checkbox indent--checkbox">
+                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="green-clr" name="color" value="green">
+                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="green-clr">Green</label>
+                    </article>
+                    <article class="checkbox indent--checkbox">
+                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="black-clr" name="color" value="black">
+                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="black-clr">Black</label>
+                    </article>
+                  </section><a class="show font font--black font--upper text--extra-small ls--01em color--gray cursor--pointer position--r display--in-bl">Show more</a>
+                </section>
+                <section class="filters__item border--b-dim-white">
+                  <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Body Weight</h3>
+                </section>
+                <section class="filters__item border--b-dim-white">
+                  <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">CPU Cores</h3>
+                </section>
+                <section class="filters__item border--b-dim-white">
+                  <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">CPU Type</h3>
+                </section>
+                <section class="filters__item border--b-dim-white">
+                  <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Screen Size</h3>
+                </section>
+                <section class="filters__item border--b-dim-white">
+                  <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Operation System</h3>
+                </section>
+                <section class="filters__item border--b-dim-white">
+                  <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Cellular</h3>
+                </section>
+                <section class="filters__item border--b-dim-white">
+                  <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Ram</h3>
+                </section>
+              </aside>
+              <article class="goods">
+                <header class="goods__filters display--fl fl--just-b indent--goods-filters background--block">
+                  <article class="sort display--fl fl--align-c"><a class="sort__item sort__item--active sort__item--pop font text--pre-small cursor--pointer position--r" href="#">Popular products</a><a class="sort__item sort__item--low font text--pre-small cursor--pointer position--r" href="#">Low price</a><a class="sort__item font text--pre-small cursor--pointer position--r" href="#">High price</a></article>
+                  <article class="view display--fl fl--align-c"><a class="view__btn view__btn--grid border--l-dim-white display--fl fl--align-c fl--just-c" href="#"><span class="view__img view__img--grid view__img--grid-active"></span></a><a class="view__btn view__btn--list border--l-dim-white display--fl fl--align-c fl--just-c" href="#"><span class="view__img view__img--list"></span></a></article>
+                </header>
+                <main class="goods__content display--fl fl--row-wr fl--just-b">
+                  <article class="item display--fl fl--col-nowr background--block">
+                    <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
+                      <section class="item__info display--fl fl--just-b fl--align-c">
+                        <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
+                        <article class="icon cursor--pointer"><img class="icon__img" src="../img/icons/like.png" alt="like icon"></article>
+                      </section>
+                    </header>
+                    <section class="wrap wrap--img-item display--fl fl--just-c"><img class="img" src="../img/phone-1.jpg" alt="phone 1"></section>
+                    <section class="item__title">
+                      <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
+                    </section>
+                    <section class="rating display--fl fl--align-c fl--just-c indent--rating">
+                      <section class="rating__stars display--fl fl--just-c">
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-half.png" alt="star-half icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-empty.png" alt="star-empty icon"></article>
+                      </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
+                    </section>
+                    <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
+                      <article class="icon icon--shop-cart cursor--pointer"><img class="icon__img" src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon"></article>
+                    </section>
+                  </article>
+                  <article class="item display--fl fl--col-nowr background--block">
+                    <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
+                      <section class="item__info display--fl fl--just-b fl--align-c">
+                        <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
+                        <article class="icon cursor--pointer"><img class="icon__img" src="../img/icons/like.png" alt="like icon"></article>
+                      </section>
+                    </header>
+                    <section class="wrap wrap--img-item display--fl fl--just-c"><img class="img" src="../img/phone-2.jpg" alt="phone 2"></section>
+                    <section class="item__title">
+                      <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
+                    </section>
+                    <section class="rating display--fl fl--align-c fl--just-c indent--rating">
+                      <section class="rating__stars display--fl fl--just-c">
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-half.png" alt="star-half icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-empty.png" alt="star-empty icon"></article>
+                      </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
+                    </section>
+                    <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
+                      <article class="icon icon--shop-cart cursor--pointer"><img class="icon__img" src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon"></article>
+                    </section>
+                  </article>
+                  <article class="item display--fl fl--col-nowr background--block">
+                    <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
+                      <section class="item__info display--fl fl--just-b fl--align-c">
+                        <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
+                        <article class="icon cursor--pointer"><img class="icon__img" src="../img/icons/like.png" alt="like icon"></article>
+                      </section>
+                    </header>
+                    <section class="wrap wrap--img-item display--fl fl--just-c"><img class="img" src="../img/phone-3.jpg" alt="phone 3"></section>
+                    <section class="item__title">
+                      <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
+                    </section>
+                    <section class="rating display--fl fl--align-c fl--just-c indent--rating">
+                      <section class="rating__stars display--fl fl--just-c">
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-half.png" alt="star-half icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-empty.png" alt="star-empty icon"></article>
+                      </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
+                    </section>
+                    <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
+                      <article class="icon icon--shop-cart cursor--pointer"><img class="icon__img" src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon"></article>
+                    </section>
+                  </article>
+                  <article class="item display--fl fl--col-nowr background--block">
+                    <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
+                      <section class="item__info display--fl fl--just-b fl--align-c">
+                        <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
+                        <article class="icon cursor--pointer"><img class="icon__img" src="../img/icons/like.png" alt="like icon"></article>
+                      </section>
+                    </header>
+                    <section class="wrap wrap--img-item display--fl fl--just-c"><img class="img" src="../img/phone-4.jpg" alt="phone 4"></section>
+                    <section class="item__title">
+                      <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
+                    </section>
+                    <section class="rating display--fl fl--align-c fl--just-c indent--rating">
+                      <section class="rating__stars display--fl fl--just-c">
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-half.png" alt="star-half icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-empty.png" alt="star-empty icon"></article>
+                      </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
+                    </section>
+                    <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
+                      <article class="icon icon--shop-cart cursor--pointer"><img class="icon__img" src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon"></article>
+                    </section>
+                  </article>
+                  <article class="item display--fl fl--col-nowr background--block">
+                    <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
+                      <section class="item__info display--fl fl--just-b fl--align-c">
+                        <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
+                        <article class="icon cursor--pointer"><img class="icon__img" src="../img/icons/like.png" alt="like icon"></article>
+                      </section>
+                    </header>
+                    <section class="wrap wrap--img-item display--fl fl--just-c"><img class="img" src="../img/phone-5.jpg" alt="phone 5"></section>
+                    <section class="item__title">
+                      <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
+                    </section>
+                    <section class="rating display--fl fl--align-c fl--just-c indent--rating">
+                      <section class="rating__stars display--fl fl--just-c">
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-half.png" alt="star-half icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-empty.png" alt="star-empty icon"></article>
+                      </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
+                    </section>
+                    <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
+                      <article class="icon icon--shop-cart cursor--pointer"><img class="icon__img" src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon"></article>
+                    </section>
+                  </article>
+                  <article class="item display--fl fl--col-nowr background--block">
+                    <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
+                      <section class="item__info display--fl fl--just-b fl--align-c">
+                        <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
+                        <article class="icon cursor--pointer"><img class="icon__img" src="../img/icons/like.png" alt="like icon"></article>
+                      </section>
+                    </header>
+                    <section class="wrap wrap--img-item display--fl fl--just-c"><img class="img" src="../img/phone-6.jpg" alt="phone 6"></section>
+                    <section class="item__title">
+                      <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
+                    </section>
+                    <section class="rating display--fl fl--align-c fl--just-c indent--rating">
+                      <section class="rating__stars display--fl fl--just-c">
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-half.png" alt="star-half icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-empty.png" alt="star-empty icon"></article>
+                      </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
+                    </section>
+                    <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
+                      <article class="icon icon--shop-cart cursor--pointer"><img class="icon__img" src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon"></article>
+                    </section>
+                  </article>
+                  <article class="item display--fl fl--col-nowr background--block">
+                    <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
+                      <section class="item__info display--fl fl--just-b fl--align-c">
+                        <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
+                        <article class="icon cursor--pointer"><img class="icon__img" src="../img/icons/like.png" alt="like icon"></article>
+                      </section>
+                    </header>
+                    <section class="wrap wrap--img-item display--fl fl--just-c"><img class="img" src="../img/phone-7.jpg" alt="phone 7"></section>
+                    <section class="item__title">
+                      <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
+                    </section>
+                    <section class="rating display--fl fl--align-c fl--just-c indent--rating">
+                      <section class="rating__stars display--fl fl--just-c">
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-half.png" alt="star-half icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-empty.png" alt="star-empty icon"></article>
+                      </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
+                    </section>
+                    <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
+                      <article class="icon icon--shop-cart cursor--pointer"><img class="icon__img" src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon"></article>
+                    </section>
+                  </article>
+                  <article class="item display--fl fl--col-nowr background--block">
+                    <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
+                      <section class="item__info display--fl fl--just-b fl--align-c">
+                        <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
+                        <article class="icon cursor--pointer"><img class="icon__img" src="../img/icons/like.png" alt="like icon"></article>
+                      </section>
+                    </header>
+                    <section class="wrap wrap--img-item display--fl fl--just-c"><img class="img" src="../img/phone-8.jpg" alt="phone 8"></section>
+                    <section class="item__title">
+                      <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
+                    </section>
+                    <section class="rating display--fl fl--align-c fl--just-c indent--rating">
+                      <section class="rating__stars display--fl fl--just-c">
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-half.png" alt="star-half icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-empty.png" alt="star-empty icon"></article>
+                      </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
+                    </section>
+                    <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
+                      <article class="icon icon--shop-cart cursor--pointer"><img class="icon__img" src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon"></article>
+                    </section>
+                  </article>
+                  <article class="item display--fl fl--col-nowr background--block">
+                    <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
+                      <section class="item__info display--fl fl--just-b fl--align-c">
+                        <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
+                        <article class="icon cursor--pointer"><img class="icon__img" src="../img/icons/like.png" alt="like icon"></article>
+                      </section>
+                    </header>
+                    <section class="wrap wrap--img-item display--fl fl--just-c"><img class="img" src="../img/phone-9.jpg" alt="phone 9"></section>
+                    <section class="item__title">
+                      <h3 class="title title--small color--med-gray font font--med align--center">Asus ZenFone Go ZB452KG <br> (black and white)</h3>
+                    </section>
+                    <section class="rating display--fl fl--align-c fl--just-c indent--rating">
+                      <section class="rating__stars display--fl fl--just-c">
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-full.png" alt="star-full icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-half.png" alt="star-half icon"></article>
+                        <article class="icon icon--star"><img class="icon__img" src="../img/icons/star-empty.png" alt="star-empty icon"></article>
+                      </section><span class="rating__count font font--med text--low-small color--gray ls--005em">12</span>
+                    </section>
+                    <section class="price display--fl fl--align-c fl--just-c"><span class="price__count font font--black text--medium ls--005em">&#36; 384.4</span>
+                      <article class="icon icon--shop-cart cursor--pointer"><img class="icon__img" src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon"></article>
+                    </section>
+                  </article>
+                </main>
+                <article class="pagination background--block display--fl fl--just-b fl--align-c"><a class="pagination__link pagination__link--arrow pagination__link--arrow-prev position--r font font--black font--upper text--extra-small color--gray ls--015em">Previous page</a>
+                  <section class="pagination__pages"><a class="pagination__link pagination__link--num font font--med ls--015em text--small color--med-gray">1</a></section><a class="pagination__link pagination__link--arrow pagination__link--arrow-next position--r font font--black font--upper text--extra-small color--gray ls--015em">Next page</a>
+                </article>
+              </article>
+            </section>
+          </section>
+        </section>
+      </main>
+      <footer class="footer">
+        <section class="footer__nav border--b-dim-white">
+          <section class="container margin--center">
+            <section class="wrap wrap--footer display--fl">
+              <section class="info display--fl fl--align-c fl--just-b"><a class="logo font font--black font--upper text--large color--nearly-black ls--08em" href="/">Quantum</a>
+                <section class="menu menu--footer display--fl fl--align-c fl--just-c fl--grow-1"><a class="menu__link menu__link--footer menu__link--sub font font--med text--medium color--med-gray cursor--pointer position--r" href="#">Shop</a><a class="menu__link menu__link--footer font font--med text--medium color--med-gray cursor--pointer" href="#">Journal</a><a class="menu__link menu__link--footer font font--med text--medium color--med-gray cursor--pointer" href="#">About</a><a class="menu__link menu__link--footer font font--med text--medium color--med-gray cursor--pointer" href="#">Contacts</a></section>
+                <section class="social display--fl fl--align-c">
+                  <article class="icon icon--social cursor--pointer"><img class="icon__img" src="../img/icons/facebook-no.png" alt="facebook-no icon"></article>
+                  <article class="icon icon--social cursor--pointer"><img class="icon__img" src="../img/icons/twitter-no.png" alt="twitter-no icon"></article>
+                  <article class="icon icon--social cursor--pointer"><img class="icon__img" src="../img/icons/insta.png" alt="insta icon"></article>
+                  <article class="icon icon--social cursor--pointer"><img class="icon__img" src="../img/icons/youtube.png" alt="youtube icon"></article>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+        <section class="footer__info border--b-dim-white">
+          <section class="container margin--center">
+            <section class="wrap wrap--footer display--fl">
+              <section class="official display--fl fl--align-c">
+                <article class="copyright"><span class="copyright__text font font--med color--dark-gray text--small color--light-gray">&copy; 2016. Quantum UI kit</span></article>
+                <section class="official__private-links display--fl fl--align-c fl--grow-1"><a class="official__link font font--med color--dark-gray text--small color--light-gray" href="#">Privacy Policy</a><a class="official__link font font--med color--dark-gray text--small color--light-gray" href="#">Terms of Use</a></section>
+                <section class="official__pay display--fl fl--align-c"><span class="official__title official__title--pay font font--med color--dark-gray text--small color--light-gray">Accepted payment methods</span>
+                  <section class="official__cards display--fl fl--align-c">
+                    <article class="icon icon--card"><img class="icon__img" src="../img/card-1.png" alt="payment card 1"></article>
+                    <article class="icon icon--card"><img class="icon__img" src="../img/card-2.png" alt="payment card 2"></article>
+                    <article class="icon icon--card"><img class="icon__img" src="../img/card-3.png" alt="payment card 3"></article>
+                    <article class="icon icon--card"><img class="icon__img" src="../img/card-4.png" alt="payment card 4"></article>
+                  </section>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </footer>
+    </article>
   </body>
 </html>

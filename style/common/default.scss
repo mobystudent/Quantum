@@ -2,14 +2,24 @@ body {
     width: 1440px;
 }
 
+.wrapper {
+    min-height: 100vh;
+    height: 100%;
+}
+
 .main {
-    flex: 1 0 auto;
     background: $darkWhite;
+}
+
+.img {
+    width: 100%;
+    height: auto;
 }
 
 .margin {
     &--center {
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

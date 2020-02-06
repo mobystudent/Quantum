@@ -4,123 +4,128 @@ block title
    title Main
    
 block content
-   include includes/header.pug
-   include includes/nav.pug
-   
-   main.main
-      section.page-info.indent--page-info
-         section.container.margin--center
-            section.wrap.display--fl.fl--just-b.fl--align-c
-               article.breadcrumbs.display--fl.fl--align-c
-                  a.breadcrumbs__link.color--dim-gray.font.font--med.text--pre-small.position--r(href="/") Main
-                  a.breadcrumbs__link.color--dim-gray.font.font--med.text--pre-small.position--r(href="#") Mobile phones
-                  a.breadcrumbs__link.color--dim-gray.font.font--med.text--pre-small.position--r(href="#") Apple
-                  span.breadcrumbs__page.color--med-gray.font.font--med.text--pre-small Apple iPhone 7, 128 GB
-               article.share.display--fl.fl--align-c
-                  span.share__title.color--gray-light.font.font--med.text--pre-small Share:
-                  section.share__item.display--fl.fl--align-c
-                     article.wrap.wrap--img
-                        img(src="../img/icons/facebook.png" alt="facebook icon")
-                     span.share__count.share__count--fb.color--gray-light.font.font--med.text--pre-small.border--dim-white.position--r 45
-                  section.share__item.display--fl.fl--align-c
-                     article.wrap.wrap--img
-                        img(src="../img/icons/twitter.png" alt="twitter icon")
-                     span.share__count.color--gray-light.font.font--med.text--pre-small.border--dim-white.position--r 12
-                     
-      h1.page-title.color--med-gray.font.font--reg.title--medium.position--r.align--center.indent--page-title Smartphones
+   article.wrapper.display--fl.fl--col-nowr
+      include includes/header.pug
+      include includes/nav.pug
+      
+      main.main.indent--page-bot.fl--grow-1
+         section.page-info.indent--page-info
+            section.container.margin--center
+               section.wrap.display--fl.fl--just-b.fl--align-c
+                  article.breadcrumbs.display--fl.fl--align-c
+                     a.breadcrumbs__link.color--dim-gray.font.font--med.text--pre-small.position--r(href="/") Main
+                     a.breadcrumbs__link.color--dim-gray.font.font--med.text--pre-small.position--r(href="#") Mobile phones
+                     a.breadcrumbs__link.color--dim-gray.font.font--med.text--pre-small.position--r(href="#") Apple
+                     span.breadcrumbs__page.color--med-gray.font.font--med.text--pre-small Apple iPhone 7, 128 GB
+                  article.share.display--fl.fl--align-c
+                     span.share__title.color--gray-light.font.font--med.text--pre-small Share:
+                     section.share__item.display--fl.fl--align-c
+                        article.icon
+                           img.icon__img(src="../img/icons/facebook.png" alt="facebook icon")
+                        span.share__count.share__count--fb.color--gray-light.font.font--med.text--pre-small.border--dim-white.position--r 45
+                     section.share__item.display--fl.fl--align-c
+                        article.icon
+                           img.icon__img(src="../img/icons/twitter.png" alt="twitter icon")
+                        span.share__count.color--gray-light.font.font--med.text--pre-small.border--dim-white.position--r 12
+                        
+         h1.page-title.color--med-gray.font.font--reg.title--medium.position--r.align--center.indent--page-title Smartphones
 
-      section.content
-         section.container.margin--center
-            section.wrap.wrap--content.display--fl.fl--align-st
-               aside.filters.background--block
-                  section.filters__item.border--b-dim-white
-                     h3.filters__title.filters__title-active.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Price
-                     input.input.input--range.filters__range(type="range")
-                     article.interval.display--fl.fl--align-c.fl--just-b.indent--interval
-                        section.interval__block.interval__block-low.border--dim-white
-                           span.interval__span.font.font--med.text--low-small.color--med-gray &#36; 38.72
-                        small.sign.font.font--med.text--low-small.color--med-gray &ndash;
-                        section.interval__block.interval__block-high.border--dim-white
-                           span.interval__span.font.font--med.text--low-small.color--med-gray &#36; 971.62
-                  section.filters__item.border--b-dim-white
-                     h3.filters__title.filters__title-active.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Brand
-                     section.filters__content.display--fl.fl--row-wr.fl--just-b
+         section.content
+            section.container.margin--center
+               section.wrap.wrap--content.display--fl.fl--align-st
+                  aside.filters.background--block
+                     section.filters__item.border--b-dim-white
+                        h3.filters__title.filters__title-active.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Price
+                        input.input.input--range.filters__range(type="range")
+                        article.interval.display--fl.fl--align-c.fl--just-b.indent--interval
+                           section.interval__block.interval__block-low.border--dim-white
+                              span.interval__span.font.font--med.text--low-small.color--med-gray &#36; 38.72
+                           small.sign.font.font--med.text--low-small.color--med-gray &ndash;
+                           section.interval__block.interval__block-high.border--dim-white
+                              span.interval__span.font.font--med.text--low-small.color--med-gray &#36; 971.62
+                     section.filters__item.border--b-dim-white
+                        h3.filters__title.filters__title-active.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Brand
+                        section.filters__content.display--fl.fl--row-wr.fl--just-b
+                           
+                           - const brandValue = ['apple', 'sony', 'asus', 'lg', 'lenovo', 'meizu', 'xiaomi', 'htc',]
+                           - const brandName = ['Apple', 'Sony', 'Asus', 'LG', 'Lenovo', 'Meizu', 'Xiaomi', 'HTC']
+                           - for (let i = 0; i < brandName.length; i++)
+                              article.checkbox.indent--checkbox
+                                 input.input.input--checkbox.checkbox__input.display--none(type="checkbox" id=`${brandValue[i]}-br` name="brand" value=brandValue[i])
+                                 label.checkbox__name.font.font--med.text--low-small.color--med-gray.position--r.cursor--pointer(for=`${brandValue[i]}-br`)=brandName[i]
                         
-                        - const brandValue = ['apple', 'sony', 'asus', 'lg', 'lenovo', 'meizu', 'xiaomi', 'htc',]
-                        - const brandName = ['Apple', 'Sony', 'Asus', 'LG', 'Lenovo', 'Meizu', 'Xiaomi', 'HTC']
-                        - for (let i = 0; i < brandName.length; i++)
-                           article.checkbox.indent--checkbox
-                              input.input.input--checkbox.checkbox__input.display--none(type="checkbox" id=`${brandValue[i]}-br` name="brand" value=brandValue[i])
-                              label.checkbox__name.font.font--med.text--low-small.color--med-gray.position--r.cursor--pointer(for=`${brandValue[i]}-br`)=brandName[i]
-                     a.show.font.font--black.font--upper.text--extra-small.ls--01em.color--gray.cursor--pointer.position--r.display--in-bl Show more
-                  section.filters__item.border--b-dim-white
-                     h3.filters__title.filters__title-active.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Color
-                     section.filters__content.display--fl.fl--row-wr.fl--just-b
+                        a.show.font.font--black.font--upper.text--extra-small.ls--01em.color--gray.cursor--pointer.position--r.display--in-bl Show more
+                     section.filters__item.border--b-dim-white
+                        h3.filters__title.filters__title-active.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Color
+                        section.filters__content.display--fl.fl--row-wr.fl--just-b
+                           
+                           - const colorValue = ['ivory', 'deep grey', 'coffee', 'red', 'pink', 'yellow', 'green', 'black',]
+                           - const colorName = ['Ivory', 'Deep Grey', 'Coffee', 'Red', 'Pink', 'Yellow', 'Green', 'Black']
+                           - for (let i = 0; i < colorName.length; i++)
+                              article.checkbox.indent--checkbox
+                                 input.input.input--checkbox.checkbox__input.display--none(type="checkbox" id=`${colorValue[i]}-clr` name="color" value=colorValue[i])
+                                 label.checkbox__name.font.font--med.text--low-small.color--med-gray.position--r.cursor--pointer(for=`${colorValue[i]}-clr`)=colorName[i]
                         
-                        - const colorValue = ['ivory', 'deep grey', 'coffee', 'red', 'pink', 'yellow', 'green', 'black',]
-                        - const colorName = ['Ivory', 'Deep Grey', 'Coffee', 'Red', 'Pink', 'Yellow', 'Green', 'Black']
-                        - for (let i = 0; i < colorName.length; i++)
-                           article.checkbox.indent--checkbox
-                              input.input.input--checkbox.checkbox__input.display--none(type="checkbox" id=`${colorValue[i]}-clr` name="color" value=colorValue[i])
-                              label.checkbox__name.font.font--med.text--low-small.color--med-gray.position--r.cursor--pointer(for=`${colorValue[i]}-clr`)=colorName[i]
-                     a.show.font.font--black.font--upper.text--extra-small.ls--01em.color--gray.cursor--pointer.position--r.display--in-bl Show more
-                  section.filters__item.border--b-dim-white
-                     h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Body Weight
-                  section.filters__item.border--b-dim-white
-                     h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer CPU Cores
-                  section.filters__item.border--b-dim-white
-                     h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer CPU Type
-                  section.filters__item.border--b-dim-white
-                     h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Screen Size
-                  section.filters__item.border--b-dim-white
-                     h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Operation System
-                  section.filters__item.border--b-dim-white
-                     h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Cellular
-                  section.filters__item.border--b-dim-white
-                     h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Ram
-                  
-               article.goods
-                  header.goods__filters.display--fl.fl--just-b.indent--goods-filters.background--block
-                     article.sort.display--fl.fl--align-c
-                        a.sort__item.sort__item--active.sort__item--pop.font.text--pre-small.cursor--pointer.position--r(href="#") Popular products
-                        a.sort__item.sort__item--low.font.text--pre-small.cursor--pointer.position--r(href="#") Low price
-                        a.sort__item.font.text--pre-small.cursor--pointer.position--r(href="#") High price
-                     article.view.display--fl.fl--align-c
-                        a.view__btn.view__btn--grid.border--l-dim-white.display--fl.fl--align-c.fl--just-c(href="#")
-                           span.view__img.view__img--grid.view__img--grid-active
-                        a.view__btn.view__btn--list.border--l-dim-white.display--fl.fl--align-c.fl--just-c(href="#")
-                           span.view__img.view__img--list
-                              
-                  main.goods__content.display--fl.fl--row-wr.fl--just-b
-                     - for (let i = 0; i < 9; i++)
-                        article.item.display--fl.fl--col-nowr.background--block
-                           header.item__header.display--fl.fl--just-b.fl--align-c
-                              span.sale.font.font--black.font--upper.text--extra-small.color--gray Sale 10%
-                              section.item__info.display--fl.fl--just-b.fl--align-c
-                                 article.wrap.wrap--img-list.cursor--pointer
-                                    img(src="../img/icons/list-2.png" alt="list icon")
-                                 article.wrap.wrap--img.cursor--pointer
-                                    img(src="../img/icons/like.png" alt="like icon")
-                           section.wrap.wrap--img-item.display--fl.fl--just-c
-                              img(src=`../img/phone-${i+1}.jpg` alt=`phone ${i+1}`)
-                           section.item__title
-                              h3.title.title--small.color--med-gray.font.font--med.align--center Asus ZenFone Go ZB452KG <br> (black and white)
-                           section.rating.display--fl.fl--align-c.fl--just-c.indent--rating
-                              section.rating__stars.display--fl.fl--just-c
-                                 article.wrap.wrap--img-star
-                                    img(src="../img/icons/star-full.png" alt="star-full icon")
-                                 article.wrap.wrap--img-star
-                                    img(src="../img/icons/star-full.png" alt="star-full icon")
-                                 article.wrap.wrap--img-star
-                                    img(src="../img/icons/star-full.png" alt="star-full icon")
-                                 article.wrap.wrap--img-star
-                                    img(src="../img/icons/star-half.png" alt="star-half icon")
-                                 article.wrap.wrap--img-star
-                                    img(src="../img/icons/star-empty.png" alt="star-empty icon")
-                              span.rating__count.font.font--med.text--low-small.color--gray.ls--005em 12
-                           section.price.display--fl.fl--align-c.fl--just-c
-                              span.price__count.font.font--black.text--medium.ls--005em &#36; 384.4
-                              article.wrap.wrap--img.cursor--pointer
-                                 img(src="../img/icons/shop-cart-full.png" alt="shop-cart-full")
-                  
-                  include includes/pagination.pug
+                        a.show.font.font--black.font--upper.text--extra-small.ls--01em.color--gray.cursor--pointer.position--r.display--in-bl Show more
+                     section.filters__item.border--b-dim-white
+                        h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Body Weight
+                     section.filters__item.border--b-dim-white
+                        h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer CPU Cores
+                     section.filters__item.border--b-dim-white
+                        h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer CPU Type
+                     section.filters__item.border--b-dim-white
+                        h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Screen Size
+                     section.filters__item.border--b-dim-white
+                        h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Operation System
+                     section.filters__item.border--b-dim-white
+                        h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Cellular
+                     section.filters__item.border--b-dim-white
+                        h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Ram
+                     
+                  article.goods
+                     header.goods__filters.display--fl.fl--just-b.indent--goods-filters.background--block
+                        article.sort.display--fl.fl--align-c
+                           a.sort__item.sort__item--active.sort__item--pop.font.text--pre-small.cursor--pointer.position--r(href="#") Popular products
+                           a.sort__item.sort__item--low.font.text--pre-small.cursor--pointer.position--r(href="#") Low price
+                           a.sort__item.font.text--pre-small.cursor--pointer.position--r(href="#") High price
+                        article.view.display--fl.fl--align-c
+                           a.view__btn.view__btn--grid.border--l-dim-white.display--fl.fl--align-c.fl--just-c(href="#")
+                              span.view__img.view__img--grid.view__img--grid-active
+                           a.view__btn.view__btn--list.border--l-dim-white.display--fl.fl--align-c.fl--just-c(href="#")
+                              span.view__img.view__img--list
+                                 
+                     main.goods__content.display--fl.fl--row-wr.fl--just-b
+                        - for (let i = 0; i < 9; i++)
+                           article.item.display--fl.fl--col-nowr.background--block
+                              header.item__header.display--fl.fl--just-b.fl--align-c
+                                 span.sale.font.font--black.font--upper.text--extra-small.color--gray Sale 10%
+                                 section.item__info.display--fl.fl--just-b.fl--align-c
+                                    article.icon.icon--list.cursor--pointer
+                                       img.icon__img(src="../img/icons/list-2.png" alt="list icon")
+                                    article.icon.cursor--pointer
+                                       img.icon__img(src="../img/icons/like.png" alt="like icon")
+                              section.wrap.wrap--img-item.display--fl.fl--just-c
+                                 img.img(src=`../img/phone-${i+1}.jpg` alt=`phone ${i+1}`)
+                              section.item__title
+                                 h3.title.title--small.color--med-gray.font.font--med.align--center Asus ZenFone Go ZB452KG <br> (black and white)
+                              section.rating.display--fl.fl--align-c.fl--just-c.indent--rating
+                                 section.rating__stars.display--fl.fl--just-c
+                                    article.icon.icon--star
+                                       img.icon__img(src="../img/icons/star-full.png" alt="star-full icon")
+                                    article.icon.icon--star
+                                       img.icon__img(src="../img/icons/star-full.png" alt="star-full icon")
+                                    article.icon.icon--star
+                                       img.icon__img(src="../img/icons/star-full.png" alt="star-full icon")
+                                    article.icon.icon--star
+                                       img.icon__img(src="../img/icons/star-half.png" alt="star-half icon")
+                                    article.icon.icon--star
+                                       img.icon__img(src="../img/icons/star-empty.png" alt="star-empty icon")
+                                 span.rating__count.font.font--med.text--low-small.color--gray.ls--005em 12
+                              section.price.display--fl.fl--align-c.fl--just-c
+                                 span.price__count.font.font--black.text--medium.ls--005em &#36; 384.4
+                                 article.icon.icon--shop-cart.cursor--pointer
+                                    img.icon__img(src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon")
+                     
+                     include includes/pagination.pug
+                     
+      include includes/footer.pug

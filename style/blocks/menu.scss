@@ -1,9 +1,47 @@
 .menu {
-    padding-right: 94px;
-    padding-left: 31px;
-    flex: 1 0 auto;
+    &--nav {
+        padding-right: 30px;
+        padding-left: 31px;
+    }
+
+    &--footer {
+        padding-right: 30px;
+        padding-left: 12px;
+    }
 
     &__link {
         padding: 5px;
+
+        &--nav {
+            margin-right: 24px;
+        }
+
+        &--footer {
+            margin-right: 50px;
+
+            &:first-child {
+                margin-right: 34px;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &--sub {
+            padding-right: 20px;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 10px;
+                height: 6px;
+                transform: translateY(-50%);
+                background: url("../img/icons/arrow.png") no-repeat;
+                background-size: cover;
+            }
+        }
     }
 }

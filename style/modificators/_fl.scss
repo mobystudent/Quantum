@@ -26,4 +26,8 @@
     &--just-end {
         justify-content: flex-end;
     }
+
+    &--grow-1 {
+        flex: 1 0 auto
+    }
 }
