@@ -88,10 +88,10 @@
             <article class="breadcrumbs display--fl fl--align-c"><a class="breadcrumbs__link color--dim-gray font font--med text--pre-small position--r" href="/">Main</a><a class="breadcrumbs__link color--dim-gray font font--med text--pre-small position--r" href="#">Mobile phones</a><a class="breadcrumbs__link color--dim-gray font font--med text--pre-small position--r" href="#">Apple</a><span class="breadcrumbs__page color--med-gray font font--med text--pre-small">Apple iPhone 7, 128 GB</span></article>
             <article class="share display--fl fl--align-c"><span class="share__title color--gray-light font font--med text--pre-small">Share:</span>
               <section class="share__item display--fl fl--align-c">
-                <div class="wrap wrap--img"><img src="../img/icons/facebook.png" alt="facebook icon"></div><span class="share__count share__count--fb color--gray-light font font--med text--pre-small border--dim-white position--r">45</span>
+                <article class="wrap wrap--img"><img src="../img/icons/facebook.png" alt="facebook icon"></article><span class="share__count share__count--fb color--gray-light font font--med text--pre-small border--dim-white position--r">45</span>
               </section>
               <section class="share__item display--fl fl--align-c">
-                <div class="wrap wrap--img"><img src="../img/icons/twitter.png" alt="twitter icon"></div><span class="share__count color--gray-light font font--med text--pre-small border--dim-white position--r">12</span>
+                <article class="wrap wrap--img"><img src="../img/icons/twitter.png" alt="twitter icon"></article><span class="share__count color--gray-light font font--med text--pre-small border--dim-white position--r">12</span>
               </section>
             </article>
           </section>
@@ -100,8 +100,112 @@
       <h1 class="page-title color--med-gray font font--reg title--medium position--r align--center indent--page-title">Smartphones</h1>
       <section class="content">
         <section class="container margin--center">
-          <section class="wrap wrap--content display--fl">
-            <aside class="filters"></aside>
+          <section class="wrap wrap--content display--fl fl--align-st">
+            <aside class="filters background--block">
+              <section class="filters__item border--b-dim-white">
+                <h3 class="filters__title filters__title-active font font--med text--small color--med-gray position--r cursor--pointer">Price</h3>
+                <input class="input input--range filters__range" type="range">
+                <article class="interval display--fl fl--align-c fl--just-b indent--interval">
+                  <section class="interval__block interval__block-low border--dim-white"><span class="interval__span font font--med text--low-small color--med-gray">&#36; 38.72</span></section><small class="sign font font--med text--low-small color--med-gray">&ndash;</small>
+                  <section class="interval__block interval__block-high border--dim-white"><span class="interval__span font font--med text--low-small color--med-gray">&#36; 971.62</span></section>
+                </article>
+              </section>
+              <section class="filters__item border--b-dim-white">
+                <h3 class="filters__title filters__title-active font font--med text--small color--med-gray position--r cursor--pointer">Brand</h3>
+                <section class="filters__content display--fl fl--row-wr fl--just-b">
+                  <article class="checkbox indent--checkbox">
+                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="apple-br" name="brand" value="apple">
+                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="apple-br">Apple</label>
+                  </article>
+                  <article class="checkbox indent--checkbox">
+                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="sony-br" name="brand" value="sony">
+                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="sony-br">Sony</label>
+                  </article>
+                  <article class="checkbox indent--checkbox">
+                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="asus-br" name="brand" value="asus">
+                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="asus-br">Asus</label>
+                  </article>
+                  <article class="checkbox indent--checkbox">
+                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="lg-br" name="brand" value="lg">
+                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="lg-br">LG</label>
+                  </article>
+                  <article class="checkbox indent--checkbox">
+                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="lenovo-br" name="brand" value="lenovo">
+                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="lenovo-br">Lenovo</label>
+                  </article>
+                  <article class="checkbox indent--checkbox">
+                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="meizu-br" name="brand" value="meizu">
+                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="meizu-br">Meizu</label>
+                  </article>
+                  <article class="checkbox indent--checkbox">
+                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="xiaomi-br" name="brand" value="xiaomi">
+                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="xiaomi-br">Xiaomi</label>
+                  </article>
+                  <article class="checkbox indent--checkbox">
+                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="htc-br" name="brand" value="htc">
+                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="htc-br">HTC</label>
+                  </article>
+                </section><a class="show font font--black font--upper text--extra-small ls--01em color--gray cursor--pointer position--r display--in-bl">Show more</a>
+              </section>
+              <section class="filters__item border--b-dim-white">
+                <h3 class="filters__title filters__title-active font font--med text--small color--med-gray position--r cursor--pointer">Color</h3>
+                <section class="filters__content display--fl fl--row-wr fl--just-b">
+                  <article class="checkbox indent--checkbox">
+                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="ivory-clr" name="color" value="ivory">
+                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="ivory-clr">Ivory</label>
+                  </article>
+                  <article class="checkbox indent--checkbox">
+                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="deep grey-clr" name="color" value="deep grey">
+                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="deep grey-clr">Deep Grey</label>
+                  </article>
+                  <article class="checkbox indent--checkbox">
+                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="coffee-clr" name="color" value="coffee">
+                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="coffee-clr">Coffee</label>
+                  </article>
+                  <article class="checkbox indent--checkbox">
+                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="red-clr" name="color" value="red">
+                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="red-clr">Red</label>
+                  </article>
+                  <article class="checkbox indent--checkbox">
+                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="pink-clr" name="color" value="pink">
+                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="pink-clr">Pink</label>
+                  </article>
+                  <article class="checkbox indent--checkbox">
+                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="yellow-clr" name="color" value="yellow">
+                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="yellow-clr">Yellow</label>
+                  </article>
+                  <article class="checkbox indent--checkbox">
+                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="green-clr" name="color" value="green">
+                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="green-clr">Green</label>
+                  </article>
+                  <article class="checkbox indent--checkbox">
+                    <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="black-clr" name="color" value="black">
+                    <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer" for="black-clr">Black</label>
+                  </article>
+                </section><a class="show font font--black font--upper text--extra-small ls--01em color--gray cursor--pointer position--r display--in-bl">Show more</a>
+              </section>
+              <section class="filters__item border--b-dim-white">
+                <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Body Weight</h3>
+              </section>
+              <section class="filters__item border--b-dim-white">
+                <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">CPU Cores</h3>
+              </section>
+              <section class="filters__item border--b-dim-white">
+                <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">CPU Type</h3>
+              </section>
+              <section class="filters__item border--b-dim-white">
+                <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Screen Size</h3>
+              </section>
+              <section class="filters__item border--b-dim-white">
+                <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Operation System</h3>
+              </section>
+              <section class="filters__item border--b-dim-white">
+                <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Cellular</h3>
+              </section>
+              <section class="filters__item border--b-dim-white">
+                <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Ram</h3>
+              </section>
+            </aside>
             <article class="goods">
               <header class="goods__filters display--fl fl--just-b indent--goods-filters background--block">
                 <article class="sort display--fl fl--align-c"><a class="sort__item sort__item--active sort__item--pop font text--pre-small cursor--pointer position--r" href="#">Popular products</a><a class="sort__item sort__item--low font text--pre-small cursor--pointer position--r" href="#">Low price</a><a class="sort__item font text--pre-small cursor--pointer position--r" href="#">High price</a></article>

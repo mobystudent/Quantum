@@ -1,0 +1,16 @@
+.show {
+    padding-left: 35px;
+    margin-left: 6px;
+    margin-bottom: 4px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 1px;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        background: url("../img/icons/plus.png") no-repeat;
+        background-size: cover;
+    }
+}

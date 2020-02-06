@@ -1,0 +1,39 @@
+.checkbox {
+    width: 46%;
+
+    &__name {
+        padding-left: 40px;
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            transform: translateY(-50%);
+            border: 2px solid $dimWhite;
+            border-radius: 3px;
+        }
+
+        &:after {
+            border-color: transparent;
+        }
+    }
+
+    &__input:checked + label {
+        &:before {
+            background: $blue;
+            border: 2px solid $blue;
+            border-radius: 3px;
+        }
+    }
+
+    &__input:checked + label {
+        &:after {
+            background: url("../img/icons/check.png") center no-repeat;
+            background-size: 10px 8px;
+        }
+    }
+}

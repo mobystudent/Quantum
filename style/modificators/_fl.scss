@@ -3,6 +3,10 @@
         align-items: center;
     }
 
+    &--align-st {
+        align-items: flex-start;
+    }
+
     &--just-b {
         justify-content: space-between;
     }
