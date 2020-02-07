@@ -8,5 +8,14 @@
         @media screen and (max-width: 1151px) {
             width: 225px;
         }
+
+        @media screen and (max-width: 767px) {
+            padding: 10px 14px;
+            @include placeholder(12px, $gray);
+        }
+
+        @media screen and (max-width: 720px) {
+            padding: 8px 12px;
+        }
     }
 }

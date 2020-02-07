@@ -1,10 +1,22 @@
 .view {
+    @media screen and (max-width: 579px) {
+        width: 50%;
+    }
+
     &__btn {
         height: 100%;
         width: 58px;
 
         @media screen and (max-width: 1024px) {
             width: 52px;
+        }
+
+        @media screen and (max-width: 579px) {
+            width: 50%;
+        }
+
+        &--list {
+            border-right: 2px solid $dimWhite;
         }
     }
 

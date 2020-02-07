@@ -9,6 +9,10 @@
         @media screen and (max-width: 720px) {
             font-size: 26px;
         }
+
+        @media screen and (max-width: 579px) {
+            font-size: 24px;
+        }
     }
 
     &--small {
@@ -19,5 +23,9 @@
             font-size: 12px;
             line-height: 18px;
         }
+
+        // @media screen and (max-width: 579px) {
+        //
+        // }
     }
 }

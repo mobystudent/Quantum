@@ -7,6 +7,13 @@
         padding-right: 25px;
     }
 
+    @media screen and (max-width: 579px) {
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+        border-bottom: 2px solid $dimWhite;
+    }
+
     &__item {
         padding-top: 22px;
         padding-bottom: 22px;

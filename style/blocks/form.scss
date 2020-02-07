@@ -4,6 +4,12 @@
             margin-top: 15px;
             order: 3;
         }
+
+        @media screen and (max-width: 579px) {
+            order: 2;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
     }
 
     &__cat {

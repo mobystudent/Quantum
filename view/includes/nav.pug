@@ -1,9 +1,9 @@
 nav.nav.border--t-dim-white.border--b-dim-white
-   .container.margin--center
-      .wrap.wrap--nav.display--fl
-         section.nav__select.nav__select--cat.border--r-dim-white.border--l-dim-white
-            a.nav__link.nav__link--cat.cursor--pointer(href="#")
-               span.nav__span.nav__span--cat.font.font--med.text--small.color--dark-gray.position--r All Categories
+   section.container.margin--center
+      section.wrap.wrap--nav.display--fl
+         section.menu.menu--cat.nav__select--cat.border--r-dim-white.border--l-dim-white
+            a.btn.btn--cat.cursor--pointer(href="#")
+               span.btn__text.btn__text--cat.font.font--med.text--small.color--dark-gray.position--r All Categories
             ul.nav__list.nav__list--cat.display--none
                
                - for (let i = 0; i < 6; i++)
@@ -14,20 +14,21 @@ nav.nav.border--t-dim-white.border--b-dim-white
             - const menuNav = ['Super Deals', 'Featured Brands', 'Collections', 'Bestselling'];
             - for (let i = 0; i < menuNav.length; i++)
                a.menu__link.menu__link--nav.font.font--med.text--small.color--dark-gray.cursor--pointer(href="#")=menuNav[i]
-               
-            a.menu__link.menu__link--menu.font.font--med.text--small.color--dark-gray.cursor--pointer.position--r Menu
-         .menu-filter.display--fl
+            
+            a.btn.btn--menu.cursor--pointer(href="#")
+               span.btn__text.btn__text--menu.font.font--med.text--small.color--dark-gray.position--r Menu
+         section.menu.menu--filter.display--fl
             section.nav__select.display--fl.fl--align-c.border--l-dim-white
-               a.nav__link.cursor--pointer(href="#")
-                  span.nav__span.nav__span--filter.font.font--med.text--small.color--gray.position--r Help
+               a.btn.btn--info.cursor--pointer(href="#")
+                  span.btn__text.btn__text--info.font.font--med.text--small.color--gray.position--r Help
                ul.nav__list.display--none
                   
                   - for (let i = 0; i < 2; i++)
                      li.nav__li.font.font--med.text--small.color--gray.cursor--pointer Item #{i+1}
                      
             section.nav__select.display--fl.fl--align-c.border--l-dim-white
-               a.nav__link.cursor--pointer(href="#")
-                  span.nav__span.nav__span--filter.font.font--med.text--small.color--gray.position--r USD
+               a.btn.btn--info.cursor--pointer(href="#")
+                  span.btn__text.btn__text--info.font.font--med.text--small.color--gray.position--r USD
                ul.nav__list.display--none
                   
                   - const currency = ['USD', 'RUB', 'UAH'];
@@ -35,8 +36,8 @@ nav.nav.border--t-dim-white.border--b-dim-white
                      li.nav__li.font.font--med.text--small.color--gray.cursor--pointer=currency[i]
                      
             section.nav__select.display--fl.fl--align-c.border--l-dim-white.border--r-dim-white
-               a.nav__link.cursor--pointer(href="#")
-                  span.nav__span.nav__span--filter.font.font--med.text--small.color--gray.position--r Language
+               a.btn.btn--info.cursor--pointer(href="#")
+                  span.btn__text.btn__text--info.font.font--med.text--small.color--gray.position--r Language
                ul.nav__list.display--none
                   
                   - const lang = ['en', 'ru', 'ua'];

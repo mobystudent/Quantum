@@ -9,6 +9,10 @@
         padding-bottom: 20px;
     }
 
+    @media screen and (max-width: 579px) {
+        padding-bottom: 15px;
+    }
+
     &:after {
         content: '';
         position: absolute;

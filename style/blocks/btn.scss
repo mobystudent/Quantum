@@ -7,14 +7,141 @@
         }
     }
 
+    &--menu {
+        display: none;
+
+        @media screen and (max-width: 1024px) {
+            display: block;
+            height: 100%;
+            padding: 18px 30px;
+            border-right: 2px solid $dimWhite;
+        }
+
+        @media screen and (max-width: 720px) {
+            border-right: none;
+        }
+
+        @media screen and (max-width: 579px) {
+            width: 100%;
+            text-align: center;
+            padding: 18px 15px;
+        }
+    }
+
+    &--cat {
+        padding: 22px 42px 22px 30px;
+        height: 100%;
+
+        @media screen and (max-width: 1151px) {
+            padding: 22px 28px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            padding: 18px 20px;
+        }
+
+        @media screen and (max-width: 579px) {
+            text-align: center;
+            padding: 18px 15px;
+        }
+    }
+
+    &--info {
+        padding: 22px 27px;
+
+        @media screen and (max-width: 1151px) {
+            padding: 22px 20px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            padding: 18px 20px;
+        }
+    }
+
     &--filters {
         display: none;
 
         @media screen and (max-width: 720px) {
-            display: flex;
-            align-items: center;
+            display: block;
+            text-align: center;
+            padding: 18px 40px;
+        }
+
+        @media screen and (max-width: 579px) {
+            width: 50%;
+        }
+    }
+
+    &__text {
+        &--menu {
+            padding-left: 30px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                height: 12px;
+                width: 18px;
+                transform: translateY(-50%);
+                background: url("../img/icons/burger.png") no-repeat;
+                background-size: cover;
+
+                @media screen and (max-width: 1024px) {
+                    height: 10px;
+                    width: 16px;
+                }
+            }
+        }
+
+        &--cat {
             padding-left: 40px;
-            padding-right: 40px;
+
+            @media screen and (max-width: 1151px) {
+                padding-left: 30px;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                height: 12px;
+                width: 18px;
+                transform: translateY(-50%);
+                background: url("../img/icons/burger.png") no-repeat;
+                background-size: cover;
+
+                @media screen and (max-width: 1024px) {
+                    height: 10px;
+                    width: 16px;
+                }
+            }
+        }
+
+        &--info {
+            padding-right: 20px;
+
+            @media screen and (max-width: 1024px) {
+                padding-right: 17px;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                height: 6px;
+                width: 10px;
+                transform: translateY(-50%);
+                background: url("../img/icons/arrow.png") no-repeat;
+                background-size: cover;
+
+                @media screen and (max-width: 1024px) {
+                    height: 5px;
+                    width: 8px;
+                }
+            }
         }
     }
 }

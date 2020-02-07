@@ -88,14 +88,16 @@ block content
                            a.sort__item.sort__item--active.sort__item--pop.font.text--pre-small.cursor--pointer.position--r(href="#") Popular products
                            a.sort__item.sort__item--low.font.text--pre-small.cursor--pointer.position--r(href="#") Low price
                            a.sort__item.font.text--pre-small.cursor--pointer.position--r(href="#") High price
-                        a.btn.btn--filters.font.font--bold.text--pre-small.cursor--pointer.border--l-dim-white.color--dark-gray Filters
-                        article.view.display--fl.fl--align-c
-                           a.view__btn.view__btn--grid.border--l-dim-white.display--fl.fl--align-c.fl--just-c(href="#")
-                              span.view__img.view__img--grid.view__img--grid-active
-                           a.view__btn.view__btn--list.border--l-dim-white.display--fl.fl--align-c.fl--just-c(href="#")
-                              span.view__img.view__img--list
+                        section.wrap.wrap--filters.display--fl
+                           a.btn.btn--filters.cursor--pointer.border--l-dim-white(href="#")
+                              span.btn__text.btn__text--filters.font.font--bold.text--pre-small.color--dark-gray.position--r Filters
+                           article.view.display--fl.fl--align-c
+                              a.view__btn.view__btn--grid.border--l-dim-white.display--fl.fl--align-c.fl--just-c(href="#")
+                                 span.view__img.view__img--grid.view__img--grid-active
+                              a.view__btn.view__btn--list.border--l-dim-white.display--fl.fl--align-c.fl--just-c(href="#")
+                                 span.view__img.view__img--list
                                  
-                     main.goods__content.display--fl.fl--row-wr.fl--just-b
+                     main.goods__content.display--fl.fl--row-wr.position--r
                         
                         - for (let i = 0; i < 9; i++)
                            article.item.display--fl.fl--col-nowr.background--block.indent--item

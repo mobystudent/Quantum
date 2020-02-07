@@ -20,6 +20,10 @@
             line-height: 26px;
         }
 
+        @media screen and (max-width: 579px) {
+            line-height: 22px;
+        }
+
         &:before {
             content: '';
             position: absolute;

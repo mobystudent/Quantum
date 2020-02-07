@@ -1,0 +1,27 @@
+.goods {
+    @media screen and (max-width: 579px) {
+        width: 100%;
+    }
+
+    &__filters {
+        @media screen and (max-width: 579px) {
+            flex-flow: column nowrap;
+        }
+    }
+
+    &__content {
+        justify-content: space-between;
+
+        @media screen and (max-width: 579px) {
+            justify-content: space-around;
+            margin: 0 -5px;
+
+            &:after {
+                content: '';
+                position: relative;
+                width: 50%;
+                height: 0;
+            }
+        }
+    }
+}
