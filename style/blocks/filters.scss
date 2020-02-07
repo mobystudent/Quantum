@@ -14,6 +14,14 @@
         width: 220px;
     }
 
+    @media screen and (max-width: 767px) {
+        width: 210px;
+    }
+
+    @media screen and (max-width: 720px) {
+        display: none;
+    }
+
     &__item {
         padding: 20px 20px 21px;
 

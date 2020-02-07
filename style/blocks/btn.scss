@@ -6,4 +6,15 @@
             width: 35px;
         }
     }
+
+    &--filters {
+        display: none;
+
+        @media screen and (max-width: 720px) {
+            display: flex;
+            align-items: center;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
 }

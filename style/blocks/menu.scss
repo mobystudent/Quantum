@@ -62,11 +62,19 @@
                 margin-right: 35px;
             }
 
+            @media screen and (max-width: 720px) {
+                margin-right: 20px;
+            }
+
             &:first-child {
                 margin-right: 34px;
 
                 @media screen and (max-width: 1024px) {
                     margin-right: 25px;
+                }
+
+                @media screen and (max-width: 720px) {
+                    margin-right: 20px;
                 }
             }
 

@@ -11,11 +11,24 @@
             padding-right: 0;
             padding-left: 0;
         }
+
+        @media screen and (max-width: 720px) {
+            flex-flow: row wrap;
+            justify-content: center;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
     }
 
     &--page-info {
         padding-left: 14px;
         padding-right: 15px;
+
+        @media screen and (max-width: 720px) {
+            flex-flow: row wrap;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
 
     &--img {
@@ -26,6 +39,11 @@
             @media screen and (max-width: 1024px) {
                 height: 145px;
                 margin-bottom: 20px;
+            }
+
+            @media screen and (max-width: 720px) {
+                height: 130px;
+                margin-bottom: 15px;
             }
         }
     }

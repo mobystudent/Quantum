@@ -13,6 +13,11 @@
         padding-left: 15px;
     }
 
+    @media screen and (max-width: 720px) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
     &__pay {
         @media screen and (max-width: 1024px) {
             flex-flow: column nowrap;
@@ -35,6 +40,10 @@
 
         @media screen and (max-width: 1024px) {
             padding-left: 40px;
+        }
+
+        @media screen and (max-width: 720px) {
+            padding-left: 20px;
         }
     }
 }

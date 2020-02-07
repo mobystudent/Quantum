@@ -39,6 +39,10 @@
             @media screen and (max-width: 1024px) {
                 margin-right: 33px;
             }
+
+            @media screen and (max-width: 720px) {
+                margin-right: 25px;
+            }
         }
 
         &--low {
@@ -46,6 +50,10 @@
 
             @media screen and (max-width: 1024px) {
                 margin-right: 40px;
+            }
+
+            @media screen and (max-width: 720px) {
+                margin-right: 25px;
             }
         }
     }

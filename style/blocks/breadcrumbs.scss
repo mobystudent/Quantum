@@ -5,6 +5,11 @@
         padding-right: 30px;
     }
 
+    @media screen and (max-width: 720px) {
+        padding-right: 15px;
+        margin-bottom: 10px;
+    }
+
     &__link {
         padding-right: 27px;
         margin-right: 18px;

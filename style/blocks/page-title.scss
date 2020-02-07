@@ -5,6 +5,10 @@
         padding-bottom: 35px;
     }
 
+    @media screen and (max-width: 720px) {
+        padding-bottom: 20px;
+    }
+
     &:after {
         content: '';
         position: absolute;
@@ -14,5 +18,9 @@
         height: 2px;
         transform: translateX(-50%);
         background: $blue;
+
+        @media screen and (max-width: 720px) {
+            width: 58px;
+        }
     }
 }

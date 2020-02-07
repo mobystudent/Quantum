@@ -1,4 +1,11 @@
 .form {
+    &--search {
+        @media screen and (max-width: 720px) {
+            margin-top: 15px;
+            order: 3;
+        }
+    }
+
     &__cat {
         padding: 16px 25px;
 

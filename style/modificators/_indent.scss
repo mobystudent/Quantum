@@ -7,6 +7,11 @@
             padding-top: 20px;
             margin-bottom: 60px;
         }
+
+        @media screen and (max-width: 720px) {
+            padding-top: 15px;
+            margin-bottom: 40px;
+        }
     }
 
     &--page-title {
@@ -30,6 +35,10 @@
 
         @media screen and (max-width: 1024px) {
             margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 720px) {
+            margin-bottom: 15px;
         }
     }
 
