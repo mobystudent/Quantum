@@ -1,22 +1,44 @@
 .text {
     &--large {
         font-size: 22px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 20px;
+        }
     }
 
     &--medium {
         font-size: 16px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 14px;
+        }
     }
 
     &--small {
         font-size: 14px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 12px;
+        }
     }
 
     &--pre-small {
         font-size: 13px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 12px;
+        }
     }
 
     &--low-small {
         font-size: 12px;
+        line-height: 17px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 11px;
+            line-height: 15px;
+        }
     }
 
     &--extra-small {

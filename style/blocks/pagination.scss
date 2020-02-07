@@ -1,6 +1,10 @@
 .pagination {
     padding: 24px 34px 19px 43px;
 
+    @media screen and (max-width: 1024px) {
+        padding: 18px 25px;
+    }
+
     &__link {
         &--arrow {
             &:before {
@@ -10,12 +14,21 @@
                 width: 14px;
                 height: 14px;
 
+                @media screen and (max-width: 1024px) {
+                    width: 12px;
+                    height: 12px;
+                }
+
                 background: url("../img/icons/arrow-side.png") no-repeat;
                 background-size: cover;
             }
 
             &-prev {
                 padding-left: 33px;
+
+                @media screen and (max-width: 1024px) {
+                    padding-left: 25px;
+                }
 
                 &:before {
                     left: 0;
@@ -25,6 +38,10 @@
 
             &-next {
                 padding-right: 33px;
+
+                @media screen and (max-width: 1024px) {
+                    padding-right: 25px;
+                }
 
                 &:before {
                     right: 0;
@@ -36,5 +53,9 @@
 
     &__pages {
         padding-right: 29px;
+
+        @media screen and (max-width: 1024px) {
+            padding-right: 0;
+        }
     }
 }

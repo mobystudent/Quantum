@@ -3,13 +3,38 @@
     padding-right: 83px;
     width: 100%;
 
+    @media screen and (max-width: 1151px) {
+        padding-right: 65px;
+        padding-left: 75px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    &__pay {
+        @media screen and (max-width: 1024px) {
+            flex-flow: column nowrap;
+        }
+    }
+
     &__title {
         &--pay {
             margin-right: 29px;
+
+            @media screen and (max-width: 1024px) {
+                margin-right: 0;
+                margin-bottom: 5px;
+            }
         }
     }
 
     &__link {
         padding-left: 30px;
+
+        @media screen and (max-width: 1024px) {
+            padding-left: 40px;
+        }
     }
 }

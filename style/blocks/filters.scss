@@ -4,12 +4,30 @@
     margin-right: 30px;
     flex: 0 0 auto;
 
+    @media screen and (max-width: 1151px) {
+        margin-right: 20px;
+        width: 245px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        margin-right: 15px;
+        width: 220px;
+    }
+
     &__item {
         padding: 20px 20px 21px;
+
+        @media screen and (max-width: 1024px) {
+            padding: 15px;
+        }
     }
 
     &__range {
         margin-bottom: 22px;
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 17px;
+        }
     }
 
     &__title {
@@ -27,6 +45,10 @@
 
         &-active {
             margin-bottom: 29px;
+
+            @media screen and (max-width: 1024px) {
+                margin-bottom: 22px;
+            }
 
             &:before {
                 transform: translateY(-50%) rotate(180deg);

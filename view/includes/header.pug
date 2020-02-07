@@ -11,20 +11,12 @@ header.header
                   - for (let i = 0; i < 5; i++)
                      li.form__li Category #{i+1}
                      
-            button.form__btn.btn.btn--search
-               img.form__img(src="img/icons/search.png" alt="search icon")
+            button.form__btn.btn.btn--search.display--fl.fl--just-c
+               article.icon.icon--magni.position--r
+                  img.icon__img(src="img/icons/search.png" alt="search icon")
          section.personal.display--fl.fl--align-c.fl--just-end.fl--grow-1
-            section.icon.icon--busket.display--fl.personal__item.personal__item--busket.fl--align-c.cursor--pointer
-               article.icon.icon--pers.icon--pers-busket.position--r
-                  img.icon__img(src="img/icons/shop-cart.png" alt="shop-cart icon")
-               section.personal__text.font.font--med.color--dark-gray.text--small
+            section.personal__item.personal__item--busket.font.font--med.color--dark-gray.text--small.cursor--pointer.position--r
                   span.personal__count.personal__count--busket 2
                   span.personal__span Items
-            section.personal__item.personal__item--wish-list.display--fl.personal__item.fl--align-c.cursor--pointer
-               article.icon.icon--pers
-                  img.icon__img(src="img/icons/like.png" alt="like icon")
-               span.personal__span.personal__span--per.font.font--med.color--dark-gray.text--small Wish List
-            section.personal__item.personal__item--sign-in.display--fl.personal__item.fl--align-c.cursor--pointer
-               article.icon.icon--pers
-                  img.icon__img(src="img/icons/user.png" alt="user icon")
-               span.personal__span.personal__span--per.font.font--med.color--dark-gray.text--small Sing in
+            span.personal__item.personal__item--wish-list.font.font--med.color--dark-gray.text--small.cursor--pointer.position--r Wish List
+            span.personal__item.personal__item--sign-in.font.font--med.color--dark-gray.text--small.cursor--pointer.position--r Sing in

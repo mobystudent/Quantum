@@ -1,16 +1,32 @@
 .wrap {
     &--header {
-        padding-right: 30px;
+        padding-right: 39px;
         padding-left: 15px;
+
+        @media screen and (max-width: 1151px) {
+            padding-right: 15px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            padding-right: 0;
+            padding-left: 0;
+        }
     }
 
-    &--nav {
-        height: 61px;
+    &--page-info {
+        padding-left: 14px;
+        padding-right: 15px;
     }
 
     &--img {
         &-item {
             margin-bottom: 26px;
+            height: 160px;
+
+            @media screen and (max-width: 1024px) {
+                height: 145px;
+                margin-bottom: 20px;
+            }
         }
     }
 }

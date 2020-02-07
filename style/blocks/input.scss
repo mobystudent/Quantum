@@ -4,5 +4,9 @@
         border: none;
         padding: 10px 16px;
         @include placeholder(14px, $gray);
+
+        @media screen and (max-width: 1151px) {
+            width: 225px;
+        }
     }
 }

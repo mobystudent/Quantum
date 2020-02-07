@@ -2,29 +2,66 @@
     &--page-info {
         padding-top: 46px;
         margin-bottom: 80px;
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 20px;
+            margin-bottom: 60px;
+        }
     }
 
     &--page-title {
-        margin-bottom: 110px;
+        margin-bottom: 59px;
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 40px;
+        }
     }
 
     &--goods-filters {
         margin-bottom: 30px;
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 20px;
+        }
     }
 
     &--rating {
         margin-bottom: 25px;
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 20px;
+        }
     }
 
     &--checkbox {
-        margin-bottom: 22px;
+        margin-bottom: 21px;
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 15px;
+        }
     }
 
     &--interval {
         margin-bottom: 8px;
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 4px;
+        }
     }
 
     &--page-bot {
         padding-bottom: 30px;
+
+        @media screen and (max-width: 1024px) {
+            padding-bottom: 20px;
+        }
+    }
+
+    &--item {
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 20px;
+        }
     }
 }

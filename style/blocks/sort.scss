@@ -2,11 +2,21 @@
     padding-left: 33px;
     padding-right: 50px;
 
+    @media screen and (max-width: 1024px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
     &__item {
         padding-top: 22px;
         padding-bottom: 22px;
         color: $darkGray;
         font-weight: 500;
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
 
         &--active {
             color: $blue;
@@ -25,10 +35,18 @@
 
         &--pop {
             margin-right: 43px;
+
+            @media screen and (max-width: 1024px) {
+                margin-right: 33px;
+            }
         }
 
         &--low {
             margin-right: 50px;
+
+            @media screen and (max-width: 1024px) {
+                margin-right: 40px;
+            }
         }
     }
 }

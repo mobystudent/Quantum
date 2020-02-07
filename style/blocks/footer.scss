@@ -2,10 +2,20 @@
     &__nav {
         padding-top: 34px;
         padding-bottom: 38px;
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
     }
 
     &__info {
         padding-top: 41px;
         padding-bottom: 50px;
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
     }
 }

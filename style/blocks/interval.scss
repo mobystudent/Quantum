@@ -3,5 +3,10 @@
         padding: 9px 12px;
         border-radius: 3px;
         min-width: 90px;
+
+        @media screen and (max-width: 1024px) {
+            padding: 7px 9px;
+            min-width: 80px;
+        }
     }
 }

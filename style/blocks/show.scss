@@ -3,6 +3,12 @@
     margin-left: 6px;
     margin-bottom: 4px;
 
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 2px;
+        margin-left: 5px;
+        padding-left: 20px;
+    }
+
     &:before {
         content: '';
         position: absolute;
@@ -12,5 +18,11 @@
         height: 8px;
         background: url("../img/icons/plus.png") no-repeat;
         background-size: cover;
+
+        @media screen and (max-width: 1024px) {
+            top: 3px;
+            width: 7px;
+            height: 7px;
+        }
     }
 }

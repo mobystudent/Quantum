@@ -1,12 +1,18 @@
 .share {
-    margin-right: 15px;
-
     &__title {
         margin-right: 31px;
+
+        @media screen and (max-width: 1024px) {
+            margin-right: 20px;
+        }
     }
 
     &__item {
         margin-right: 26px;
+
+        @media screen and (max-width: 1024px) {
+            margin-right: 20px;
+        }
 
         &:last-child {
             margin-right: 0;
@@ -18,8 +24,17 @@
         padding: 3px 7px;
         margin-left: 19px;
 
+        @media screen and (max-width: 1024px) {
+            padding: 2px 5px;
+            margin-left: 13px;
+        }
+
         &--fb {
             margin-left: 24px;
+
+            @media screen and (max-width: 1024px) {
+                margin-left: 18px;
+            }
         }
 
         &:before,

@@ -1,5 +1,7 @@
 body {
-    width: 1440px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wrapper {
@@ -9,11 +11,6 @@ body {
 
 .main {
     background: $darkWhite;
-}
-
-.img {
-    width: 100%;
-    height: auto;
 }
 
 .margin {

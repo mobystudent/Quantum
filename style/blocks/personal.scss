@@ -1,27 +1,61 @@
 .personal {
     margin-left: 30px;
 
+    @media screen and (max-width: 1024px) {
+        margin-left: 20px;
+    }
+
     &__item {
-        padding: 0 10px;
-        margin-right: 20px;
+        margin-right: 40px;
+        padding-left: 38px;
+        line-height: 20px;
+
+        @media screen and (max-width: 1151px) {
+            margin-right: 30px;
+            padding-left: 33px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+        }
 
         &--busket {
-            margin-right: 12px;
+            margin-right: 31px;
+            padding-left: 42px;
+
+            @media screen and (max-width: 1151px) {
+                margin-right: 28px;
+                padding-left: 35px;
+            }
+
+            &:before {
+                background: url("../img/icons/shop-cart.png") no-repeat;
+                background-size: cover;
+            }
+        }
+
+        &--wish-list {
+            &:before {
+                background: url("../img/icons/like.png") no-repeat;
+                background-size: cover;
+            }
+        }
+
+        &--sign-in {
+            &:before {
+                background: url("../img/icons/user.png") no-repeat;
+                background-size: cover;
+            }
         }
 
         &:last-child {
             margin-right: 0;
         }
-    }
-
-    &__span {
-        &--per {
-            margin-left: 17px;
-        }
-    }
-
-    &__text {
-        margin-left: 20px;
     }
 
     &__count {

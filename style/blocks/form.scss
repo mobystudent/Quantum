@@ -1,8 +1,10 @@
 .form {
-    height: 50px;
-
     &__cat {
         padding: 16px 25px;
+
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
     }
 
     &__link {

@@ -2,4 +2,14 @@
     width: 100%;
     padding-right: 83px;
     padding-left: 71px;
+
+    @media screen and (max-width: 1151px) {
+        padding-right: 65px;
+        padding-left: 65px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
