@@ -55,7 +55,14 @@
         padding-right: 29px;
 
         @media screen and (max-width: 1024px) {
-            padding-right: 0;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+
+    &__abbrev {
+        @media screen and (max-width: 579px) {
+            display: none;
         }
     }
 }

@@ -13,15 +13,18 @@
 //Modificators
 @import "modificators/_display.scss";
 @import "modificators/_fl.scss";
-@import "modificators/_text.scss";
 @import "modificators/_colors.scss";
 @import "modificators/_ls.scss";
 @import "modificators/_border.scss";
 @import "modificators/_position.scss";
 @import "modificators/_indent.scss";
-@import "modificators/_title.scss";
 @import "modificators/_align.scss";
 @import "modificators/_background.scss";
+@import "modificators/_hover.scss";
+
+//Text
+@import "modificators/_text.scss";
+@import "modificators/_title.scss";
 
 //Blocks
 @import "blocks/header.scss";

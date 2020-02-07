@@ -1,0 +1,8 @@
+.hover {
+    &--clr-blur {
+        &:hover{
+            color: $blue;
+            transition: color .25s ease-in-out;
+        }
+    }
+}
