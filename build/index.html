@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <title>Main</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="css/reset.min.css" rel="stylesheet">
     <link href="css/build.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/main.js"></script>
   </head>
   <body>
@@ -106,11 +108,15 @@
                 <section class="filters__item border--b-dim-white">
                   <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Price</h3>
                   <section class="filters__body display--none">
-                    <input class="input input--range filters__range" type="range">
-                    <article class="interval display--fl fl--align-c fl--just-b indent--interval">
-                      <section class="interval__block interval__block-low border--dim-white"><span class="interval__span font font--med text--low-small color--med-gray">&#36; 38.72</span></section><small class="sign font font--med text--low-small color--med-gray">&ndash;</small>
-                      <section class="interval__block interval__block-high border--dim-white"><span class="interval__span font font--med text--low-small color--med-gray">&#36; 971.62</span></section>
-                    </article>
+                    <section class="filters__range indent--range" id="slider-range"></section>
+                    <section class="filters__interval display--fl fl--align-c fl--just-b indent--interval">
+                      <section class="wrap wrap--input-range position--r font font--med text--low-small color--med-gray">
+                        <input class="input input--range input--range-min filters__range font font--med text--low-small color--med-gray border--dim-white" type="text" id="range-min">
+                      </section><small class="sign font font--med text--low-small color--med-gray">&ndash;</small>
+                      <section class="wrap wrap--input-range position--r font font--med text--low-small color--med-gray">
+                        <input class="input input--range input--range-max filters__range font font--med text--low-small color--med-gray border--dim-white" type="text" id="range-max">
+                      </section>
+                    </section>
                   </section>
                 </section>
                 <section class="filters__item border--b-dim-white">

@@ -1,0 +1,26 @@
+.ui-widget.ui-widget-content {
+    border: none;
+    background: $dimWhite;
+    margin-top: 6px;
+}
+
+.ui-slider-horizontal {
+    height: 4px;
+
+    .ui-slider-range {
+        top: 1px;
+    }
+}
+
+.ui-widget-header {
+    background: $blue;
+    border: none;
+}
+
+.ui-widget-content .ui-state-default {
+    background: $blue;
+    border: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}

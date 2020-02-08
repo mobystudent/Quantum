@@ -7,6 +7,7 @@ $(() => {
         modalSignIn();
         filtersMobile();
         accordion();
+        rangePrice();
     });
 
     function btnsSortHandler() {
@@ -124,11 +125,46 @@ $(() => {
         });
     };
 
-    $(document).click((e) => {
-        const { target: btnClose = '' } = e;
+    function rangePrice() {
+        $("#slider-range").slider({
+            range: true,
+            step: .01,
+            min: 0,
+            max: 1000,
+            values: [0, 1000],
+            slide: (event, ui) => {
+                $("#range-min").val(ui.values[0]);
+                $("#range-max").val(ui.values[1]);
+            }
+        });
 
-        console.log(btnClose);
-    });
+        $("#range-min").val($("#slider-range").slider("values", 0));
+        $("#range-max").val($("#slider-range").slider("values", 1));
+
+        $("#range-max").change(() => {
+            min = $("#range-min").val();
+            max = $("#range-max").val();
+
+            if(parseInt(min) > parseInt(max)) {
+                max = min;
+                $("#range-max").val(max);
+            }
+
+            $("#slider-range").slider('values', 1, max);
+        });
+
+        $("#range-min").change(() => {
+            min = $("#range-min").val();
+            max = $("#range-max").val();
+
+            if(parseInt(min) > parseInt(max)) {
+                min = max;
+                $("#range-min").val(min);
+            }
+
+            $("#slider-range").slider('values', 0, min);
+        });
+    };
 });
 
 //# sourceMappingURL=main.js.map

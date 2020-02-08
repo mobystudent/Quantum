@@ -38,13 +38,14 @@ block content
                      section.filters__item.border--b-dim-white
                         h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Price
                         section.filters__body.display--none
-                           input.input.input--range.filters__range(type="range")
-                           article.interval.display--fl.fl--align-c.fl--just-b.indent--interval
-                              section.interval__block.interval__block-low.border--dim-white
-                                 span.interval__span.font.font--med.text--low-small.color--med-gray &#36; 38.72
+                           section#slider-range.filters__range.indent--range
+                           section.filters__interval.display--fl.fl--align-c.fl--just-b.indent--interval
+                              section.wrap.wrap--input-range.position--r.font.font--med.text--low-small.color--med-gray
+                                 input.input.input--range.input--range-min.filters__range.font.font--med.text--low-small.color--med-gray.border--dim-white(type="text" id="range-min")
                               small.sign.font.font--med.text--low-small.color--med-gray &ndash;
-                              section.interval__block.interval__block-high.border--dim-white
-                                 span.interval__span.font.font--med.text--low-small.color--med-gray &#36; 971.62
+                              section.wrap.wrap--input-range.position--r.font.font--med.text--low-small.color--med-gray
+                                 input.input.input--range.input--range-max.filters__range.font.font--med.text--low-small.color--med-gray.border--dim-white(type="text" id="range-max")
+                        
                      section.filters__item.border--b-dim-white
                         h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Brand
                         section.filters__body.display--none

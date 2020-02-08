@@ -89,4 +89,16 @@
     &--modal-title {
         margin-bottom: 25px;
     }
+
+    &--range {
+        margin-bottom: 34px;
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 28px;
+        }
+    }
+
+    &--interval {
+        margin-bottom: 8px;
+    }
 }

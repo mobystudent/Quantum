@@ -26,6 +26,9 @@
 @import "modificators/_text.scss";
 @import "modificators/_title.scss";
 
+//Plugins
+@import "plugins/slider-range.scss";
+
 //Blocks
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
@@ -50,7 +53,6 @@
 @import "blocks/pagination.scss";
 @import "blocks/checkbox.scss";
 @import "blocks/show.scss";
-@import "blocks/interval.scss";
 @import "blocks/footer.scss";
 @import "blocks/info.scss";
 @import "blocks/official.scss";
