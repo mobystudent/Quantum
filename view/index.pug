@@ -35,52 +35,58 @@ block content
                section.wrap.wrap--content.display--fl.fl--align-st
                   aside.filters.background--block
                      section.filters__item.border--b-dim-white
-                        h3.filters__title.filters__title-active.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Price
-                        input.input.input--range.filters__range(type="range")
-                        article.interval.display--fl.fl--align-c.fl--just-b.indent--interval
-                           section.interval__block.interval__block-low.border--dim-white
-                              span.interval__span.font.font--med.text--low-small.color--med-gray &#36; 38.72
-                           small.sign.font.font--med.text--low-small.color--med-gray &ndash;
-                           section.interval__block.interval__block-high.border--dim-white
-                              span.interval__span.font.font--med.text--low-small.color--med-gray &#36; 971.62
+                        h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Price
+                        section.filters__body
+                           input.input.input--range.filters__range(type="range")
+                           article.interval.display--fl.fl--align-c.fl--just-b.indent--interval
+                              section.interval__block.interval__block-low.border--dim-white
+                                 span.interval__span.font.font--med.text--low-small.color--med-gray &#36; 38.72
+                              small.sign.font.font--med.text--low-small.color--med-gray &ndash;
+                              section.interval__block.interval__block-high.border--dim-white
+                                 span.interval__span.font.font--med.text--low-small.color--med-gray &#36; 971.62
                      section.filters__item.border--b-dim-white
-                        h3.filters__title.filters__title-active.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Brand
-                        section.filters__content.display--fl.fl--row-wr.fl--just-b
+                        h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Brand
+                        section.filters__body
+                           section.filters__content.display--fl.fl--row-wr.fl--just-b
+                              
+                              - const brandValue = ['apple', 'sony', 'asus', 'lg', 'lenovo', 'meizu', 'xiaomi', 'htc',]
+                              - const brandName = ['Apple', 'Sony', 'Asus', 'LG', 'Lenovo', 'Meizu', 'Xiaomi', 'HTC']
+                              - for (let i = 0; i < brandName.length; i++)
+                                 article.checkbox.indent--checkbox
+                                    input.input.input--checkbox.checkbox__input.display--none(type="checkbox" id=`${brandValue[i]}-br` name="brand" value=brandValue[i])
+                                    label.checkbox__name.font.font--med.text--low-small.color--med-gray.position--r.cursor--pointer.display--in-bl(for=`${brandValue[i]}-br`)=brandName[i]
                            
-                           - const brandValue = ['apple', 'sony', 'asus', 'lg', 'lenovo', 'meizu', 'xiaomi', 'htc',]
-                           - const brandName = ['Apple', 'Sony', 'Asus', 'LG', 'Lenovo', 'Meizu', 'Xiaomi', 'HTC']
-                           - for (let i = 0; i < brandName.length; i++)
-                              article.checkbox.indent--checkbox
-                                 input.input.input--checkbox.checkbox__input.display--none(type="checkbox" id=`${brandValue[i]}-br` name="brand" value=brandValue[i])
-                                 label.checkbox__name.font.font--med.text--low-small.color--med-gray.position--r.cursor--pointer.display--in-bl(for=`${brandValue[i]}-br`)=brandName[i]
-                        
-                        a.show.font.font--black.font--upper.text--extra-small.ls--01em.color--gray.cursor--pointer.position--r.display--in-bl Show more
+                           a.show.font.font--black.font--upper.text--extra-small.ls--01em.color--gray.cursor--pointer.position--r.display--in-bl Show more
                      section.filters__item.border--b-dim-white
-                        h3.filters__title.filters__title-active.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Color
-                        section.filters__content.display--fl.fl--row-wr.fl--just-b
+                        h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Color
+                        section.filters__body
+                           section.filters__content.display--fl.fl--row-wr.fl--just-b
+                              
+                              - const colorValue = ['ivory', 'deep grey', 'coffee', 'red', 'pink', 'yellow', 'green', 'black',]
+                              - const colorName = ['Ivory', 'Deep Grey', 'Coffee', 'Red', 'Pink', 'Yellow', 'Green', 'Black']
+                              - for (let i = 0; i < colorName.length; i++)
+                                 article.checkbox.indent--checkbox
+                                    input.input.input--checkbox.checkbox__input.display--none(type="checkbox" id=`${colorValue[i]}-clr` name="color" value=colorValue[i])
+                                    label.checkbox__name.font.font--med.text--low-small.color--med-gray.position--r.cursor--pointer.display--in-bl(for=`${colorValue[i]}-clr`)=colorName[i]
                            
-                           - const colorValue = ['ivory', 'deep grey', 'coffee', 'red', 'pink', 'yellow', 'green', 'black',]
-                           - const colorName = ['Ivory', 'Deep Grey', 'Coffee', 'Red', 'Pink', 'Yellow', 'Green', 'Black']
-                           - for (let i = 0; i < colorName.length; i++)
-                              article.checkbox.indent--checkbox
-                                 input.input.input--checkbox.checkbox__input.display--none(type="checkbox" id=`${colorValue[i]}-clr` name="color" value=colorValue[i])
-                                 label.checkbox__name.font.font--med.text--low-small.color--med-gray.position--r.cursor--pointer.display--in-bl(for=`${colorValue[i]}-clr`)=colorName[i]
-                        
-                        a.show.font.font--black.font--upper.text--extra-small.ls--01em.color--gray.cursor--pointer.position--r.display--in-bl Show more
-                     section.filters__item.border--b-dim-white
-                        h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Body Weight
-                     section.filters__item.border--b-dim-white
-                        h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer CPU Cores
-                     section.filters__item.border--b-dim-white
-                        h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer CPU Type
-                     section.filters__item.border--b-dim-white
-                        h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Screen Size
-                     section.filters__item.border--b-dim-white
-                        h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Operation System
-                     section.filters__item.border--b-dim-white
-                        h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Cellular
-                     section.filters__item.border--b-dim-white
-                        h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer Ram
+                           a.show.font.font--black.font--upper.text--extra-small.ls--01em.color--gray.cursor--pointer.position--r.display--in-bl Show more
+                     
+                     - const filters = ['Body Weight', 'CPU Cores', 'CPU Type', 'Screen Size', 'Operation System', 'Cellular', 'Ram']
+                     
+                     - for (let j = 0; j < filters.length; j++)
+                        section.filters__item.border--b-dim-white
+                           h3.filters__title.font.font--med.text--small.color--med-gray.position--r.cursor--pointer=filters[j]
+                           section.filters__body
+                              section.filters__content.display--fl.fl--row-wr.fl--just-b
+                                 
+                                 - const colorValue = ['ivory', 'deep grey', 'coffee', 'red', 'pink', 'yellow', 'green', 'black',]
+                                 - const colorName = ['Ivory', 'Deep Grey', 'Coffee', 'Red', 'Pink', 'Yellow', 'Green', 'Black']
+                                 - for (let i = 0; i < colorName.length; i++)
+                                    article.checkbox.indent--checkbox
+                                       input.input.input--checkbox.checkbox__input.display--none(type="checkbox" id=`${colorValue[i]}-clr` name="color" value=colorValue[i])
+                                       label.checkbox__name.font.font--med.text--low-small.color--med-gray.position--r.cursor--pointer.display--in-bl(for=`${colorValue[i]}-clr`)=colorName[i]
+                              
+                              a.show.font.font--black.font--upper.text--extra-small.ls--01em.color--gray.cursor--pointer.position--r.display--in-bl Show more
                      
                   article.goods
                      header.goods__filters.display--fl.fl--just-b.indent--goods-filters.background--block
@@ -92,10 +98,10 @@ block content
                            a.btn.btn--filters.cursor--pointer.border--l-dim-white(href="#")
                               span.btn__text.btn__text--filters.font.font--bold.text--pre-small.color--dark-gray.position--r Filters
                            article.view.display--fl.fl--align-c
-                              a.view__btn.view__btn--grid.border--l-dim-white.display--fl.fl--align-c.fl--just-c(href="#")
-                                 span.view__img.view__img--grid.view__img--grid-active
+                              a.view__btn.view__btn--grid.view__btn--active.border--l-dim-white.display--fl.fl--align-c.fl--just-c(href="#")
+                                 span.view__span.view__span--grid
                               a.view__btn.view__btn--list.border--l-dim-white.display--fl.fl--align-c.fl--just-c(href="#")
-                                 span.view__img.view__img--list
+                                 span.view__span.view__span--list
                                  
                      main.goods__content.display--fl.fl--row-wr.position--r
                         

@@ -7,6 +7,8 @@
     <title>Main</title>
     <link href="css/reset.min.css" rel="stylesheet">
     <link href="css/build.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
     <article class="wrapper display--fl fl--col-nowr">
@@ -37,17 +39,25 @@
       <nav class="nav border--t-dim-white border--b-dim-white">
         <section class="container margin--center">
           <section class="wrap wrap--nav display--fl">
-            <section class="menu menu--cat nav__select--cat border--r-dim-white border--l-dim-white"><a class="btn btn--cat cursor--pointer" href="#"><span class="btn__text btn__text--cat font font--med text--small color--dark-gray position--r">All Categories</span></a>
-              <ul class="nav__list nav__list--cat display--none">
-                <li class="nav__li">Category 1</li>
-                <li class="nav__li">Category 2</li>
-                <li class="nav__li">Category 3</li>
-                <li class="nav__li">Category 4</li>
-                <li class="nav__li">Category 5</li>
-                <li class="nav__li">Category 6</li>
+            <section class="menu menu--cat border--r-dim-white border--l-dim-white position--r"><a class="btn btn--cat cursor--pointer" href="#"><span class="btn__text btn__text--cat font font--med text--small color--dark-gray position--r">All Categories</span></a>
+              <ul class="menu__list menu__list--cat border--dim-white position--a display--fl fl--row-wr">
+                <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 1</span></a></li>
+                <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 2</span></a></li>
+                <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 3</span></a></li>
+                <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 4</span></a></li>
+                <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 5</span></a></li>
+                <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 6</span></a></li>
               </ul>
             </section>
-            <section class="menu menu--nav display--fl fl--align-c fl--grow-1"><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer hover--clr-blur" href="#">Super Deals</a><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer hover--clr-blur" href="#">Featured Brands</a><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer hover--clr-blur" href="#">Collections</a><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer hover--clr-blur" href="#">Bestselling</a><a class="btn btn--menu cursor--pointer" href="#"><span class="btn__text btn__text--menu font font--med text--small color--dark-gray position--r">Menu</span></a>
+            <section class="menu menu--nav display--fl fl--align-c fl--grow-1"><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer hover--clr-blur" href="#">Super Deals</a><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer hover--clr-blur" href="#">Featured Brands</a><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer hover--clr-blur" href="#">Collections</a><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer hover--clr-blur" href="#">Bestselling</a>
+              <section class="menu menu--burger position--r"><a class="btn btn--menu cursor--pointer border--r-dim-white" href="#"><span class="btn__text btn__text--menu font font--med text--small color--dark-gray position--r">Menu</span></a>
+                <ul class="menu__list menu__list--burger border--dim-white position--a display--fl fl--row-wr">
+                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover--clr-white hover--bg-blur-05"><span class="menu__text font font--med text--small position--r display--bl">Super Deals</span></a></li>
+                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover--clr-white hover--bg-blur-05"><span class="menu__text font font--med text--small position--r display--bl">Featured Brands</span></a></li>
+                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover--clr-white hover--bg-blur-05"><span class="menu__text font font--med text--small position--r display--bl">Collections</span></a></li>
+                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover--clr-white hover--bg-blur-05"><span class="menu__text font font--med text--small position--r display--bl">Bestselling</span></a></li>
+                </ul>
+              </section>
             </section>
             <section class="menu menu--filter display--fl">
               <section class="nav__select display--fl fl--align-c border--l-dim-white"><a class="btn btn--info cursor--pointer" href="#"><span class="btn__text btn__text--info font font--med text--small color--gray position--r">Help</span></a>
@@ -96,114 +106,372 @@
             <section class="wrap wrap--content display--fl fl--align-st">
               <aside class="filters background--block">
                 <section class="filters__item border--b-dim-white">
-                  <h3 class="filters__title filters__title-active font font--med text--small color--med-gray position--r cursor--pointer">Price</h3>
-                  <input class="input input--range filters__range" type="range">
-                  <article class="interval display--fl fl--align-c fl--just-b indent--interval">
-                    <section class="interval__block interval__block-low border--dim-white"><span class="interval__span font font--med text--low-small color--med-gray">&#36; 38.72</span></section><small class="sign font font--med text--low-small color--med-gray">&ndash;</small>
-                    <section class="interval__block interval__block-high border--dim-white"><span class="interval__span font font--med text--low-small color--med-gray">&#36; 971.62</span></section>
-                  </article>
+                  <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Price</h3>
+                  <section class="filters__body">
+                    <input class="input input--range filters__range" type="range">
+                    <article class="interval display--fl fl--align-c fl--just-b indent--interval">
+                      <section class="interval__block interval__block-low border--dim-white"><span class="interval__span font font--med text--low-small color--med-gray">&#36; 38.72</span></section><small class="sign font font--med text--low-small color--med-gray">&ndash;</small>
+                      <section class="interval__block interval__block-high border--dim-white"><span class="interval__span font font--med text--low-small color--med-gray">&#36; 971.62</span></section>
+                    </article>
+                  </section>
                 </section>
                 <section class="filters__item border--b-dim-white">
-                  <h3 class="filters__title filters__title-active font font--med text--small color--med-gray position--r cursor--pointer">Brand</h3>
-                  <section class="filters__content display--fl fl--row-wr fl--just-b">
-                    <article class="checkbox indent--checkbox">
-                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="apple-br" name="brand" value="apple">
-                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="apple-br">Apple</label>
-                    </article>
-                    <article class="checkbox indent--checkbox">
-                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="sony-br" name="brand" value="sony">
-                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="sony-br">Sony</label>
-                    </article>
-                    <article class="checkbox indent--checkbox">
-                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="asus-br" name="brand" value="asus">
-                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="asus-br">Asus</label>
-                    </article>
-                    <article class="checkbox indent--checkbox">
-                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="lg-br" name="brand" value="lg">
-                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="lg-br">LG</label>
-                    </article>
-                    <article class="checkbox indent--checkbox">
-                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="lenovo-br" name="brand" value="lenovo">
-                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="lenovo-br">Lenovo</label>
-                    </article>
-                    <article class="checkbox indent--checkbox">
-                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="meizu-br" name="brand" value="meizu">
-                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="meizu-br">Meizu</label>
-                    </article>
-                    <article class="checkbox indent--checkbox">
-                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="xiaomi-br" name="brand" value="xiaomi">
-                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="xiaomi-br">Xiaomi</label>
-                    </article>
-                    <article class="checkbox indent--checkbox">
-                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="htc-br" name="brand" value="htc">
-                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="htc-br">HTC</label>
-                    </article>
-                  </section><a class="show font font--black font--upper text--extra-small ls--01em color--gray cursor--pointer position--r display--in-bl">Show more</a>
+                  <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Brand</h3>
+                  <section class="filters__body">
+                    <section class="filters__content display--fl fl--row-wr fl--just-b">
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="apple-br" name="brand" value="apple">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="apple-br">Apple</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="sony-br" name="brand" value="sony">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="sony-br">Sony</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="asus-br" name="brand" value="asus">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="asus-br">Asus</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="lg-br" name="brand" value="lg">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="lg-br">LG</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="lenovo-br" name="brand" value="lenovo">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="lenovo-br">Lenovo</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="meizu-br" name="brand" value="meizu">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="meizu-br">Meizu</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="xiaomi-br" name="brand" value="xiaomi">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="xiaomi-br">Xiaomi</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="htc-br" name="brand" value="htc">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="htc-br">HTC</label>
+                      </article>
+                    </section><a class="show font font--black font--upper text--extra-small ls--01em color--gray cursor--pointer position--r display--in-bl">Show more</a>
+                  </section>
                 </section>
                 <section class="filters__item border--b-dim-white">
-                  <h3 class="filters__title filters__title-active font font--med text--small color--med-gray position--r cursor--pointer">Color</h3>
-                  <section class="filters__content display--fl fl--row-wr fl--just-b">
-                    <article class="checkbox indent--checkbox">
-                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="ivory-clr" name="color" value="ivory">
-                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="ivory-clr">Ivory</label>
-                    </article>
-                    <article class="checkbox indent--checkbox">
-                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="deep grey-clr" name="color" value="deep grey">
-                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="deep grey-clr">Deep Grey</label>
-                    </article>
-                    <article class="checkbox indent--checkbox">
-                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="coffee-clr" name="color" value="coffee">
-                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="coffee-clr">Coffee</label>
-                    </article>
-                    <article class="checkbox indent--checkbox">
-                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="red-clr" name="color" value="red">
-                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="red-clr">Red</label>
-                    </article>
-                    <article class="checkbox indent--checkbox">
-                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="pink-clr" name="color" value="pink">
-                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="pink-clr">Pink</label>
-                    </article>
-                    <article class="checkbox indent--checkbox">
-                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="yellow-clr" name="color" value="yellow">
-                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="yellow-clr">Yellow</label>
-                    </article>
-                    <article class="checkbox indent--checkbox">
-                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="green-clr" name="color" value="green">
-                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="green-clr">Green</label>
-                    </article>
-                    <article class="checkbox indent--checkbox">
-                      <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="black-clr" name="color" value="black">
-                      <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="black-clr">Black</label>
-                    </article>
-                  </section><a class="show font font--black font--upper text--extra-small ls--01em color--gray cursor--pointer position--r display--in-bl">Show more</a>
+                  <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Color</h3>
+                  <section class="filters__body">
+                    <section class="filters__content display--fl fl--row-wr fl--just-b">
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="ivory-clr" name="color" value="ivory">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="ivory-clr">Ivory</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="deep grey-clr" name="color" value="deep grey">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="deep grey-clr">Deep Grey</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="coffee-clr" name="color" value="coffee">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="coffee-clr">Coffee</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="red-clr" name="color" value="red">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="red-clr">Red</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="pink-clr" name="color" value="pink">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="pink-clr">Pink</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="yellow-clr" name="color" value="yellow">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="yellow-clr">Yellow</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="green-clr" name="color" value="green">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="green-clr">Green</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="black-clr" name="color" value="black">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="black-clr">Black</label>
+                      </article>
+                    </section><a class="show font font--black font--upper text--extra-small ls--01em color--gray cursor--pointer position--r display--in-bl">Show more</a>
+                  </section>
                 </section>
                 <section class="filters__item border--b-dim-white">
                   <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Body Weight</h3>
+                  <section class="filters__body">
+                    <section class="filters__content display--fl fl--row-wr fl--just-b">
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="ivory-clr" name="color" value="ivory">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="ivory-clr">Ivory</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="deep grey-clr" name="color" value="deep grey">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="deep grey-clr">Deep Grey</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="coffee-clr" name="color" value="coffee">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="coffee-clr">Coffee</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="red-clr" name="color" value="red">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="red-clr">Red</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="pink-clr" name="color" value="pink">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="pink-clr">Pink</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="yellow-clr" name="color" value="yellow">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="yellow-clr">Yellow</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="green-clr" name="color" value="green">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="green-clr">Green</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="black-clr" name="color" value="black">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="black-clr">Black</label>
+                      </article>
+                    </section><a class="show font font--black font--upper text--extra-small ls--01em color--gray cursor--pointer position--r display--in-bl">Show more</a>
+                  </section>
                 </section>
                 <section class="filters__item border--b-dim-white">
                   <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">CPU Cores</h3>
+                  <section class="filters__body">
+                    <section class="filters__content display--fl fl--row-wr fl--just-b">
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="ivory-clr" name="color" value="ivory">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="ivory-clr">Ivory</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="deep grey-clr" name="color" value="deep grey">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="deep grey-clr">Deep Grey</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="coffee-clr" name="color" value="coffee">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="coffee-clr">Coffee</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="red-clr" name="color" value="red">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="red-clr">Red</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="pink-clr" name="color" value="pink">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="pink-clr">Pink</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="yellow-clr" name="color" value="yellow">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="yellow-clr">Yellow</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="green-clr" name="color" value="green">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="green-clr">Green</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="black-clr" name="color" value="black">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="black-clr">Black</label>
+                      </article>
+                    </section><a class="show font font--black font--upper text--extra-small ls--01em color--gray cursor--pointer position--r display--in-bl">Show more</a>
+                  </section>
                 </section>
                 <section class="filters__item border--b-dim-white">
                   <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">CPU Type</h3>
+                  <section class="filters__body">
+                    <section class="filters__content display--fl fl--row-wr fl--just-b">
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="ivory-clr" name="color" value="ivory">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="ivory-clr">Ivory</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="deep grey-clr" name="color" value="deep grey">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="deep grey-clr">Deep Grey</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="coffee-clr" name="color" value="coffee">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="coffee-clr">Coffee</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="red-clr" name="color" value="red">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="red-clr">Red</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="pink-clr" name="color" value="pink">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="pink-clr">Pink</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="yellow-clr" name="color" value="yellow">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="yellow-clr">Yellow</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="green-clr" name="color" value="green">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="green-clr">Green</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="black-clr" name="color" value="black">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="black-clr">Black</label>
+                      </article>
+                    </section><a class="show font font--black font--upper text--extra-small ls--01em color--gray cursor--pointer position--r display--in-bl">Show more</a>
+                  </section>
                 </section>
                 <section class="filters__item border--b-dim-white">
                   <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Screen Size</h3>
+                  <section class="filters__body">
+                    <section class="filters__content display--fl fl--row-wr fl--just-b">
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="ivory-clr" name="color" value="ivory">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="ivory-clr">Ivory</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="deep grey-clr" name="color" value="deep grey">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="deep grey-clr">Deep Grey</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="coffee-clr" name="color" value="coffee">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="coffee-clr">Coffee</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="red-clr" name="color" value="red">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="red-clr">Red</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="pink-clr" name="color" value="pink">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="pink-clr">Pink</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="yellow-clr" name="color" value="yellow">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="yellow-clr">Yellow</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="green-clr" name="color" value="green">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="green-clr">Green</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="black-clr" name="color" value="black">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="black-clr">Black</label>
+                      </article>
+                    </section><a class="show font font--black font--upper text--extra-small ls--01em color--gray cursor--pointer position--r display--in-bl">Show more</a>
+                  </section>
                 </section>
                 <section class="filters__item border--b-dim-white">
                   <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Operation System</h3>
+                  <section class="filters__body">
+                    <section class="filters__content display--fl fl--row-wr fl--just-b">
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="ivory-clr" name="color" value="ivory">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="ivory-clr">Ivory</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="deep grey-clr" name="color" value="deep grey">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="deep grey-clr">Deep Grey</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="coffee-clr" name="color" value="coffee">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="coffee-clr">Coffee</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="red-clr" name="color" value="red">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="red-clr">Red</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="pink-clr" name="color" value="pink">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="pink-clr">Pink</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="yellow-clr" name="color" value="yellow">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="yellow-clr">Yellow</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="green-clr" name="color" value="green">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="green-clr">Green</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="black-clr" name="color" value="black">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="black-clr">Black</label>
+                      </article>
+                    </section><a class="show font font--black font--upper text--extra-small ls--01em color--gray cursor--pointer position--r display--in-bl">Show more</a>
+                  </section>
                 </section>
                 <section class="filters__item border--b-dim-white">
                   <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Cellular</h3>
+                  <section class="filters__body">
+                    <section class="filters__content display--fl fl--row-wr fl--just-b">
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="ivory-clr" name="color" value="ivory">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="ivory-clr">Ivory</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="deep grey-clr" name="color" value="deep grey">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="deep grey-clr">Deep Grey</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="coffee-clr" name="color" value="coffee">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="coffee-clr">Coffee</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="red-clr" name="color" value="red">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="red-clr">Red</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="pink-clr" name="color" value="pink">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="pink-clr">Pink</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="yellow-clr" name="color" value="yellow">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="yellow-clr">Yellow</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="green-clr" name="color" value="green">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="green-clr">Green</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="black-clr" name="color" value="black">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="black-clr">Black</label>
+                      </article>
+                    </section><a class="show font font--black font--upper text--extra-small ls--01em color--gray cursor--pointer position--r display--in-bl">Show more</a>
+                  </section>
                 </section>
                 <section class="filters__item border--b-dim-white">
                   <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Ram</h3>
+                  <section class="filters__body">
+                    <section class="filters__content display--fl fl--row-wr fl--just-b">
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="ivory-clr" name="color" value="ivory">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="ivory-clr">Ivory</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="deep grey-clr" name="color" value="deep grey">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="deep grey-clr">Deep Grey</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="coffee-clr" name="color" value="coffee">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="coffee-clr">Coffee</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="red-clr" name="color" value="red">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="red-clr">Red</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="pink-clr" name="color" value="pink">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="pink-clr">Pink</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="yellow-clr" name="color" value="yellow">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="yellow-clr">Yellow</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="green-clr" name="color" value="green">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="green-clr">Green</label>
+                      </article>
+                      <article class="checkbox indent--checkbox">
+                        <input class="input input--checkbox checkbox__input display--none" type="checkbox" id="black-clr" name="color" value="black">
+                        <label class="checkbox__name font font--med text--low-small color--med-gray position--r cursor--pointer display--in-bl" for="black-clr">Black</label>
+                      </article>
+                    </section><a class="show font font--black font--upper text--extra-small ls--01em color--gray cursor--pointer position--r display--in-bl">Show more</a>
+                  </section>
                 </section>
               </aside>
               <article class="goods">
                 <header class="goods__filters display--fl fl--just-b indent--goods-filters background--block">
                   <article class="sort display--fl fl--align-c fl--grow-1"><a class="sort__item sort__item--active sort__item--pop font text--pre-small cursor--pointer position--r hover--clr-blur" href="#">Popular products</a><a class="sort__item sort__item--low font text--pre-small cursor--pointer position--r hover--clr-blur" href="#">Low price</a><a class="sort__item font text--pre-small cursor--pointer position--r hover--clr-blur" href="#">High price</a></article>
                   <section class="wrap wrap--filters display--fl"><a class="btn btn--filters cursor--pointer border--l-dim-white" href="#"><span class="btn__text btn__text--filters font font--bold text--pre-small color--dark-gray position--r">Filters</span></a>
-                    <article class="view display--fl fl--align-c"><a class="view__btn view__btn--grid border--l-dim-white display--fl fl--align-c fl--just-c" href="#"><span class="view__img view__img--grid view__img--grid-active"></span></a><a class="view__btn view__btn--list border--l-dim-white display--fl fl--align-c fl--just-c" href="#"><span class="view__img view__img--list"></span></a></article>
+                    <article class="view display--fl fl--align-c"><a class="view__btn view__btn--grid view__btn--active border--l-dim-white display--fl fl--align-c fl--just-c" href="#"><span class="view__span view__span--grid"></span></a><a class="view__btn view__btn--list border--l-dim-white display--fl fl--align-c fl--just-c" href="#"><span class="view__span view__span--list"></span></a></article>
                   </section>
                 </header>
                 <main class="goods__content display--fl fl--row-wr position--r">

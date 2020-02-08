@@ -18,9 +18,23 @@
         &--list {
             border-right: 2px solid $dimWhite;
         }
+
+        &--active {
+            .view__span {
+                &--grid {
+                    background: url("../img/icons/grid-active.png") no-repeat;
+                    background-size: cover;
+                }
+
+                &--list {
+                    background: url("../img/icons/list-active.png") no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
     }
 
-    &__img {
+    &__span {
         &--grid {
             height: 13px;
             width: 20px;
@@ -32,10 +46,10 @@
                 height: 12px;
             }
 
-            &-active {
-                background: url("../img/icons/grid-active.png") no-repeat;
-                background-size: cover;
-            }
+            // &-active {
+            //     background: url("../img/icons/grid-active.png") no-repeat;
+            //     background-size: cover;
+            // }
         }
 
         &--list {
@@ -49,10 +63,10 @@
                 width: 15px;
             }
 
-            &-active {
-                background: url("../img/icons/list-active.png") no-repeat;
-                background-size: cover;
-            }
+            // &-active {
+            //     background: url("../img/icons/list-active.png") no-repeat;
+            //     background-size: cover;
+            // }
         }
     }
 }

@@ -1,13 +1,15 @@
 nav.nav.border--t-dim-white.border--b-dim-white
    section.container.margin--center
       section.wrap.wrap--nav.display--fl
-         section.menu.menu--cat.nav__select--cat.border--r-dim-white.border--l-dim-white
+         section.menu.menu--cat.border--r-dim-white.border--l-dim-white.position--r
             a.btn.btn--cat.cursor--pointer(href="#")
                span.btn__text.btn__text--cat.font.font--med.text--small.color--dark-gray.position--r All Categories
-            ul.nav__list.nav__list--cat.display--none
+            ul.menu__list.menu__list--cat.border--dim-white.position--a.display--fl.fl--row-wr
                
                - for (let i = 0; i < 6; i++)
-                  li.nav__li Category #{i+1}
+                  li.menu__li.border--b-dim-white
+                     a.menu__link.menu__link--select.cursor--pointer.color--dark-gray.hover--clr-white.hover--bg-blur-05
+                        span.menu__text.menu__text--sub.font.font--med.text--small.position--r.display--bl Category #{i+1}
                   
          section.menu.menu--nav.display--fl.fl--align-c.fl--grow-1
             
@@ -15,8 +17,17 @@ nav.nav.border--t-dim-white.border--b-dim-white
             - for (let i = 0; i < menuNav.length; i++)
                a.menu__link.menu__link--nav.font.font--med.text--small.color--dark-gray.cursor--pointer.hover--clr-blur(href="#")=menuNav[i]
             
-            a.btn.btn--menu.cursor--pointer(href="#")
-               span.btn__text.btn__text--menu.font.font--med.text--small.color--dark-gray.position--r Menu
+            section.menu.menu--burger.position--r
+               a.btn.btn--menu.cursor--pointer.border--r-dim-white(href="#")
+                  span.btn__text.btn__text--menu.font.font--med.text--small.color--dark-gray.position--r Menu
+               ul.menu__list.menu__list--burger.border--dim-white.position--a.display--fl.fl--row-wr
+                  
+                  - const menuNavs = ['Super Deals', 'Featured Brands', 'Collections', 'Bestselling'];
+                  - for (let i = 0; i < menuNavs.length; i++)
+                     li.menu__li.border--b-dim-white
+                        a.menu__link.menu__link--select.cursor--pointer.color--dark-gray.hover--clr-white.hover--bg-blur-05
+                           span.menu__text.font.font--med.text--small.position--r.display--bl=menuNavs[i]
+               
          section.menu.menu--filter.display--fl
             section.nav__select.display--fl.fl--align-c.border--l-dim-white
                a.btn.btn--info.cursor--pointer(href="#")

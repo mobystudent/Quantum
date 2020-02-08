@@ -39,6 +39,13 @@ gulp.task('image', () => {
         .pipe(gulp.dest('build/img'))
 });
 
+gulp.task('script', () => {
+    return gulp.src('js/*.js')
+        .pipe(sourcemaps.init())
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('build/js'))
+});
+
 gulp.task('watch', () => {
     browserSync.init({
         server: "./build"
@@ -47,6 +54,7 @@ gulp.task('watch', () => {
     gulp.watch('img/**', gulp.series('image'));
     gulp.watch('style/**/*.scss', gulp.series('style'));
     gulp.watch('view/**/*.pug', gulp.series('view'));
+    gulp.watch('js/*.js', gulp.series('script'));
 });
 
-gulp.task('build', gulp.series(gulp.parallel('image','style', 'view'), 'watch'));
+gulp.task('build', gulp.series(gulp.parallel('image','style', 'view', 'script'), 'watch'));
