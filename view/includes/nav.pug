@@ -1,6 +1,6 @@
 nav.nav.border--t-dim-white.border--b-dim-white
    section.container.margin--center
-      section.wrap.wrap--nav.display--fl
+      section.nav__wrap.display--fl
          section.menu.menu--cat.border--r-dim-white.border--l-dim-white.position--r
             a.btn.btn--cat.cursor--pointer(href="#")
                span.btn__text.btn__text--cat.font.font--med.text--small.color--dark-gray.position--r All Categories
@@ -20,7 +20,7 @@ nav.nav.border--t-dim-white.border--b-dim-white
             section.menu.menu--burger.position--r
                a.btn.btn--menu.cursor--pointer.border--r-dim-white(href="#")
                   span.btn__text.btn__text--menu.font.font--med.text--small.color--dark-gray.position--r Menu
-               ul.menu__list.menu__list--burger.border--dim-white.position--a.display--fl.fl--row-wr
+               ul.menu__list.menu__list--burger.position--a.display--fl.fl--row-wr
                   
                   - const menuNavs = ['Super Deals', 'Featured Brands', 'Collections', 'Bestselling'];
                   - for (let i = 0; i < menuNavs.length; i++)
@@ -28,29 +28,35 @@ nav.nav.border--t-dim-white.border--b-dim-white
                         a.menu__link.menu__link--select.cursor--pointer.color--dark-gray.hover--clr-white.hover--bg-blur-05
                            span.menu__text.font.font--med.text--small.position--r.display--bl=menuNavs[i]
                
-         section.menu.menu--filter.display--fl
-            section.nav__select.display--fl.fl--align-c.border--l-dim-white
+         section.wrap.wrap--menu-info.display--fl
+            section.menu.menu--info.display--fl.fl--align-c.border--l-dim-white.position--r
                a.btn.btn--info.cursor--pointer(href="#")
                   span.btn__text.btn__text--info.font.font--med.text--small.color--gray.position--r Help
-               ul.nav__list.display--none
+               ul.menu__list.menu__list--fix-w.menu__list--info.border--dim-white.position--a.display--fl.fl--row-wr
                   
                   - for (let i = 0; i < 2; i++)
-                     li.nav__li.font.font--med.text--small.color--gray.cursor--pointer Item #{i+1}
+                     li.menu__li.border--b-dim-white
+                        a.menu__link.menu__link--select.cursor--pointer.color--gray.hover--clr-white.hover--bg-blur-05
+                           span.menu__text.font.font--med.text--small.position--r.display--bl Item #{i+1}
                      
-            section.nav__select.display--fl.fl--align-c.border--l-dim-white
+            section.menu.menu--info.display--fl.fl--align-c.border--l-dim-white.position--r
                a.btn.btn--info.cursor--pointer(href="#")
                   span.btn__text.btn__text--info.font.font--med.text--small.color--gray.position--r USD
-               ul.nav__list.display--none
+               ul.menu__list.menu__list--info.border--dim-white.position--a.display--fl.fl--row-wr
                   
                   - const currency = ['USD', 'RUB', 'UAH'];
                   - for (let i = 0; i < currency.length; i++)
-                     li.nav__li.font.font--med.text--small.color--gray.cursor--pointer=currency[i]
+                     li.menu__li.border--b-dim-white
+                        a.menu__link.menu__link--select.cursor--pointer.color--gray.hover--clr-white.hover--bg-blur-05.align--c
+                           span.menu__text.font.font--med.text--small.position--r.display--bl=currency[i]
                      
-            section.nav__select.display--fl.fl--align-c.border--l-dim-white.border--r-dim-white
+            section.menu.menu--info.menu--info-lang.display--fl.fl--align-c.border--l-dim-white.border--r-dim-white.position--r
                a.btn.btn--info.cursor--pointer(href="#")
                   span.btn__text.btn__text--info.font.font--med.text--small.color--gray.position--r Language
-               ul.nav__list.display--none
+               ul.menu__list.menu__list--info.border--dim-white.position--a.display--fl.fl--row-wr
                   
                   - const lang = ['en', 'ru', 'ua'];
                   - for (let i = 0; i < lang.length; i++)
-                     li.nav__li.font.font--med.text--small.color--gray.cursor--pointer=lang[i]
+                     li.menu__li.border--b-dim-white
+                        a.menu__link.menu__link--select.cursor--pointer.color--gray.hover--clr-white.hover--bg-blur-05.align--c
+                           span.menu__text.font.font--med.text--small.position--r.display--bl=lang[i]

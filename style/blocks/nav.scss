@@ -1,3 +1,7 @@
 .nav {
-    
+    &__wrap {
+        @media screen and (max-width: 579px) {
+            flex-flow: row wrap;
+        }
+    }
 }

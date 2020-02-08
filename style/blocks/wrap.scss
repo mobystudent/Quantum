@@ -61,4 +61,11 @@
             margin-right: auto;
         }
     }
+
+    &--menu-info {
+        @media screen and (max-width: 579px) {
+            border-top: 2px solid $dimWhite;
+            width: 100%;
+        }
+    }
 }

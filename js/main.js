@@ -31,11 +31,12 @@ $(() => {
         });
     });
 
-    $(".btn--cat, .btn--menu").click((e) => {
+    $(".btn--cat, .btn--menu, .btn--info, .menu__link--sub").click((e) => {
         e.preventDefault();
         e.stopPropagation();
 
-        const { target: btnMenu = '' } = e;
-        $(btnMenu).next().toggle();
+        const { target: btnMenu = '' } = e,
+            button = ($(btnMenu)[0].tagName == 'A') ? $(btnMenu) : $(btnMenu).parent();
+        button.next().toggle();
     });
 });

@@ -22,7 +22,7 @@
 
         @media screen and (max-width: 579px) {
             text-align: center;
-            padding: 18px 15px;
+            padding: 15px;
         }
     }
 
@@ -40,12 +40,13 @@
 
         @media screen and (max-width: 579px) {
             text-align: center;
-            padding: 18px 15px;
+            padding: 15px;
         }
     }
 
     &--info {
         padding: 22px 27px;
+        width: 100%;
 
         @media screen and (max-width: 1151px) {
             padding: 22px 20px;
@@ -53,6 +54,11 @@
 
         @media screen and (max-width: 1024px) {
             padding: 18px 20px;
+        }
+
+        @media screen and (max-width: 579px) {
+            text-align: center;
+            padding: 15px;
         }
     }
 
