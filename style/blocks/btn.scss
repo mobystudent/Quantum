@@ -153,4 +153,30 @@
         padding: 10px 20px;
         border-radius: 3px;
     }
+
+    &--close {
+        top: 20px;
+        right: 20px;
+        width: 15px;
+        height: 15px;
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 15px;
+            height: 2px;
+            background: $gray;
+        }
+
+        &:before {
+            transform: rotate(45deg);
+        }
+
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
 }

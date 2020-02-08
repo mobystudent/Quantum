@@ -19,7 +19,19 @@
     }
 
     @media screen and (max-width: 720px) {
-        display: none;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        padding: 30px 15px;
+        overflow-x: scroll;
+        transition: left .75s ease-in-out;
+        z-index: 15;
+    }
+
+    &--show-left {
+        left: 0;
     }
 
     &__range {
