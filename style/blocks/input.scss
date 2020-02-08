@@ -21,14 +21,12 @@
 
     &--modal {
         width: 100%;
-        border-radius: 3px;
         padding: 10px 16px;
         @include placeholder(14px, $gray);
     }
 
     &--range {
         padding: 9px 12px 9px 22px;
-        border-radius: 3px;
         width: 90px;
 
         @media screen and (max-width: 1024px) {

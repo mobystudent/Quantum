@@ -3,15 +3,12 @@ body {
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    background: $darkWhite;
 }
 
 .wrapper {
     min-height: 100vh;
     height: 100%;
-}
-
-.main {
-    background: $darkWhite;
 }
 
 .margin {

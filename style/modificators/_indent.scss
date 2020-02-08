@@ -101,4 +101,20 @@
     &--interval {
         margin-bottom: 8px;
     }
+
+    &--footer {
+        margin-bottom: 60px;
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 50px;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 40px;
+        }
+
+        @media screen and (max-width: 579px) {
+            margin-bottom: 30px;
+        }
+    }
 }

@@ -14,76 +14,78 @@
   </head>
   <body>
     <article class="wrapper display--fl fl--col-nowr">
-      <header class="header">
-        <section class="container margin--center">
-          <section class="wrap wrap--header display--fl"><a class="logo logo--nav font font--black font--upper text--large color--nearly-black ls--08em" href="/">Quantum</a>
-            <form class="form form--search display--fl border--dim-white">
-              <input class="input input--search" type="search" placeholder="Search goods">
-              <section class="form__cat border--l-dim-white border--r-dim-white"><a class="form__link font font--black text--large ls--015em color--gray text--extra-small border--l-dim-white border--r-dim-white font--upper position--r" href="#">Category</a>
-                <ul class="form__list font font--black text--large color--gray text--extra-small display--none">
-                  <li class="form__li">Category 1</li>
-                  <li class="form__li">Category 2</li>
-                  <li class="form__li">Category 3</li>
-                  <li class="form__li">Category 4</li>
-                  <li class="form__li">Category 5</li>
-                </ul>
-              </section>
-              <button class="form__btn btn btn--search display--fl fl--just-c">
-                <article class="icon icon--magni position--r display--fl"><img class="icon__img" src="img/icons/search.png" alt="search icon"></article>
-              </button>
-            </form>
-            <section class="personal display--fl fl--align-c fl--grow-1"><a class="personal__item personal__item--busket font font--med color--dark-gray text--small cursor--pointer position--r hover hover--clr-blur" href="#"><span class="personal__count personal__count--busket">2</span><span class="personal__span">Items</span></a><a class="personal__item personal__item--wish-list font font--med color--dark-gray text--small cursor--pointer position--r hover hover--clr-blur" href="#">Wish List</a><a class="personal__item personal__item--sign-in font font--med color--dark-gray text--small cursor--pointer position--r hover hover--clr-blur" id="modal-sign-in" href="#">Sing in</a></section>
-          </section>
-        </section>
-      </header>
-      <nav class="nav border--t-dim-white border--b-dim-white">
-        <section class="container margin--center">
-          <section class="nav__wrap display--fl">
-            <section class="menu menu--cat border--r-dim-white border--l-dim-white position--r"><a class="btn btn--cat cursor--pointer" id="btn-cat" href="#"><span class="btn__text btn__text--cat font font--med text--small color--dark-gray position--r">All Categories</span></a>
-              <ul class="menu__list menu__list--cat border--dim-white position--a display--fl fl--row-wr">
-                <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 1</span></a></li>
-                <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 2</span></a></li>
-                <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 3</span></a></li>
-                <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 4</span></a></li>
-                <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 5</span></a></li>
-                <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 6</span></a></li>
-              </ul>
-            </section>
-            <section class="menu menu--nav display--fl fl--align-c fl--grow-1"><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer hover hover--clr-blur" href="#">Super Deals</a><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer hover hover--clr-blur" href="#">Featured Brands</a><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer hover hover--clr-blur" href="#">Collections</a><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer hover hover--clr-blur" href="#">Bestselling</a>
-              <section class="menu menu--burger position--r"><a class="btn btn--menu cursor--pointer border--r-dim-white" id="btn-menu" href="#"><span class="btn__text btn__text--menu font font--med text--small color--dark-gray position--r">Menu</span></a>
-                <ul class="menu__list menu__list--burger position--a display--fl fl--row-wr">
-                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text font font--med text--small position--r display--bl">Super Deals</span></a></li>
-                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text font font--med text--small position--r display--bl">Featured Brands</span></a></li>
-                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text font font--med text--small position--r display--bl">Collections</span></a></li>
-                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text font font--med text--small position--r display--bl">Bestselling</span></a></li>
-                </ul>
-              </section>
-            </section>
-            <section class="wrap wrap--menu-info display--fl">
-              <section class="menu menu--info display--fl fl--align-c border--l-dim-white position--r"><a class="btn btn--info cursor--pointer" href="#"><span class="btn__text btn__text--info font font--med text--small color--gray position--r">Help</span></a>
-                <ul class="menu__list menu__list--fix-w menu__list--info border--dim-white position--a display--fl fl--row-wr">
-                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text font font--med text--small position--r display--bl">Item 1</span></a></li>
-                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text font font--med text--small position--r display--bl">Item 2</span></a></li>
-                </ul>
-              </section>
-              <section class="menu menu--info display--fl fl--align-c border--l-dim-white position--r"><a class="btn btn--info cursor--pointer" href="#"><span class="btn__text btn__text--info font font--med text--small color--gray position--r">USD</span></a>
-                <ul class="menu__list menu__list--info border--dim-white position--a display--fl fl--row-wr">
-                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--gra hovery hover--clr-white hover--bg-blur-05 align--c"><span class="menu__text font font--med text--small position--r display--bl">USD</span></a></li>
-                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--gra hovery hover--clr-white hover--bg-blur-05 align--c"><span class="menu__text font font--med text--small position--r display--bl">RUB</span></a></li>
-                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--gra hovery hover--clr-white hover--bg-blur-05 align--c"><span class="menu__text font font--med text--small position--r display--bl">UAH</span></a></li>
-                </ul>
-              </section>
-              <section class="menu menu--info menu--info-lang display--fl fl--align-c border--l-dim-white border--r-dim-white position--r"><a class="btn btn--info cursor--pointer" href="#"><span class="btn__text btn__text--info font font--med text--small color--gray position--r">Language</span></a>
-                <ul class="menu__list menu__list--info border--dim-white position--a display--fl fl--row-wr">
-                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--gray hover hover--clr-white hover--bg-blur-05 align--c"><span class="menu__text font font--med text--small position--r display--bl">en</span></a></li>
-                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--gray hover hover--clr-white hover--bg-blur-05 align--c"><span class="menu__text font font--med text--small position--r display--bl">ru</span></a></li>
-                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--gray hover hover--clr-white hover--bg-blur-05 align--c"><span class="menu__text font font--med text--small position--r display--bl">ua</span></a></li>
-                </ul>
-              </section>
+      <section class="wrap wrap--head-nav background--block">
+        <header class="header">
+          <section class="container margin--center">
+            <section class="wrap wrap--header display--fl"><a class="logo logo--nav display--fl fl--align-c" href="/"><img class="img img--logo" src="../img/logo.jpg" alt="logo"></a>
+              <form class="form form--search display--fl border--dim-white">
+                <input class="input input--search" type="search" placeholder="Search goods">
+                <section class="form__cat border--l-dim-white border--r-dim-white"><a class="form__link font font--black text--large ls--015em color--gray text--extra-small border--l-dim-white border--r-dim-white font--upper position--r" href="#">Category</a>
+                  <ul class="form__list font font--black text--large color--gray text--extra-small display--none">
+                    <li class="form__li">Category 1</li>
+                    <li class="form__li">Category 2</li>
+                    <li class="form__li">Category 3</li>
+                    <li class="form__li">Category 4</li>
+                    <li class="form__li">Category 5</li>
+                  </ul>
+                </section>
+                <button class="form__btn btn btn--search display--fl fl--just-c">
+                  <article class="icon icon--magni position--r display--fl"><img class="icon__img" src="img/icons/search.png" alt="search icon"></article>
+                </button>
+              </form>
+              <section class="personal display--fl fl--align-c fl--grow-1"><a class="personal__item personal__item--busket font font--med color--dark-gray text--small cursor--pointer position--r hover hover--clr-blur" href="#"><span class="personal__count personal__count--busket">2</span><span class="personal__span">Items</span></a><a class="personal__item personal__item--wish-list font font--med color--dark-gray text--small cursor--pointer position--r hover hover--clr-blur" href="#">Wish List</a><a class="personal__item personal__item--sign-in font font--med color--dark-gray text--small cursor--pointer position--r hover hover--clr-blur" id="modal-sign-in" href="#">Sing in</a></section>
             </section>
           </section>
-        </section>
-      </nav>
+        </header>
+        <nav class="nav border--t-dim-white border--b-dim-white">
+          <section class="container margin--center">
+            <section class="nav__wrap display--fl">
+              <section class="menu menu--cat border--r-dim-white border--l-dim-white position--r"><a class="btn btn--cat cursor--pointer" id="btn-cat" href="#"><span class="btn__text btn__text--cat font font--med text--small color--dark-gray position--r">All Categories</span></a>
+                <ul class="menu__list menu__list--cat border--dim-white position--a display--fl fl--row-wr">
+                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 1</span></a></li>
+                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 2</span></a></li>
+                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 3</span></a></li>
+                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 4</span></a></li>
+                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 5</span></a></li>
+                  <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text menu__text--sub font font--med text--small position--r display--bl">Category 6</span></a></li>
+                </ul>
+              </section>
+              <section class="menu menu--nav display--fl fl--align-c fl--grow-1"><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer hover hover--clr-blur" href="#">Super Deals</a><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer hover hover--clr-blur" href="#">Featured Brands</a><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer hover hover--clr-blur" href="#">Collections</a><a class="menu__link menu__link--nav font font--med text--small color--dark-gray cursor--pointer hover hover--clr-blur" href="#">Bestselling</a>
+                <section class="menu menu--burger position--r"><a class="btn btn--menu cursor--pointer border--r-dim-white" id="btn-menu" href="#"><span class="btn__text btn__text--menu font font--med text--small color--dark-gray position--r">Menu</span></a>
+                  <ul class="menu__list menu__list--burger position--a display--fl fl--row-wr">
+                    <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text font font--med text--small position--r display--bl">Super Deals</span></a></li>
+                    <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text font font--med text--small position--r display--bl">Featured Brands</span></a></li>
+                    <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text font font--med text--small position--r display--bl">Collections</span></a></li>
+                    <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--dark-gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text font font--med text--small position--r display--bl">Bestselling</span></a></li>
+                  </ul>
+                </section>
+              </section>
+              <section class="wrap wrap--menu-info display--fl">
+                <section class="menu menu--info display--fl fl--align-c border--l-dim-white position--r"><a class="btn btn--info cursor--pointer" href="#"><span class="btn__text btn__text--info font font--med text--small color--gray position--r">Help</span></a>
+                  <ul class="menu__list menu__list--fix-w menu__list--info border--dim-white position--a display--fl fl--row-wr">
+                    <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text font font--med text--small position--r display--bl">Item 1</span></a></li>
+                    <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--gray hover hover--clr-white hover--bg-blur-05"><span class="menu__text font font--med text--small position--r display--bl">Item 2</span></a></li>
+                  </ul>
+                </section>
+                <section class="menu menu--info display--fl fl--align-c border--l-dim-white position--r"><a class="btn btn--info cursor--pointer" href="#"><span class="btn__text btn__text--info font font--med text--small color--gray position--r">USD</span></a>
+                  <ul class="menu__list menu__list--info border--dim-white position--a display--fl fl--row-wr">
+                    <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--gra hovery hover--clr-white hover--bg-blur-05 align--c"><span class="menu__text font font--med text--small position--r display--bl">USD</span></a></li>
+                    <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--gra hovery hover--clr-white hover--bg-blur-05 align--c"><span class="menu__text font font--med text--small position--r display--bl">RUB</span></a></li>
+                    <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--gra hovery hover--clr-white hover--bg-blur-05 align--c"><span class="menu__text font font--med text--small position--r display--bl">UAH</span></a></li>
+                  </ul>
+                </section>
+                <section class="menu menu--info menu--info-lang display--fl fl--align-c border--l-dim-white border--r-dim-white position--r"><a class="btn btn--info cursor--pointer" href="#"><span class="btn__text btn__text--info font font--med text--small color--gray position--r">Language</span></a>
+                  <ul class="menu__list menu__list--info border--dim-white position--a display--fl fl--row-wr">
+                    <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--gray hover hover--clr-white hover--bg-blur-05 align--c"><span class="menu__text font font--med text--small position--r display--bl">en</span></a></li>
+                    <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--gray hover hover--clr-white hover--bg-blur-05 align--c"><span class="menu__text font font--med text--small position--r display--bl">ru</span></a></li>
+                    <li class="menu__li border--b-dim-white"><a class="menu__link menu__link--select cursor--pointer color--gray hover hover--clr-white hover--bg-blur-05 align--c"><span class="menu__text font font--med text--small position--r display--bl">ua</span></a></li>
+                  </ul>
+                </section>
+              </section>
+            </section>
+          </section>
+        </nav>
+      </section>
       <main class="main indent--page-bot fl--grow-1">
         <section class="page-info indent--page-info">
           <section class="container margin--center">
@@ -91,10 +93,10 @@
               <article class="breadcrumbs display--fl fl--align-c fl--row-wr"><a class="breadcrumbs__link color--dim-gray font font--med text--pre-small position--r" href="/">Main</a><a class="breadcrumbs__link color--dim-gray font font--med text--pre-small position--r" href="#">Mobile phones</a><a class="breadcrumbs__link color--dim-gray font font--med text--pre-small position--r" href="#">Apple</a><span class="breadcrumbs__page color--med-gray font font--med text--pre-small">Apple iPhone 7, 128 GB</span></article>
               <article class="share display--fl fl--align-c"><span class="share__title color--gray-light font font--med text--pre-small">Share:</span>
                 <section class="share__item display--fl fl--align-c">
-                  <article class="icon icon--fb"><img class="icon__img" src="../img/icons/facebook.png" alt="facebook icon"></article><span class="share__count share__count--fb color--gray-light font font--med text--pre-small border--dim-white position--r">45</span>
+                  <article class="icon icon--fb"><img class="icon__img" src="../img/icons/facebook.png" alt="facebook icon"></article><span class="share__count share__count--fb color--gray-light font font--med text--pre-small border--dim-white position--r border--rad-3">45</span>
                 </section>
                 <section class="share__item display--fl fl--align-c">
-                  <article class="icon icon--tw"><img class="icon__img" src="../img/icons/twitter.png" alt="twitter icon"></article><span class="share__count color--gray-light font font--med text--pre-small border--dim-white position--r">12</span>
+                  <article class="icon icon--tw"><img class="icon__img" src="../img/icons/twitter.png" alt="twitter icon"></article><span class="share__count color--gray-light font font--med text--pre-small border--dim-white position--r border--rad-3">12</span>
                 </section>
               </article>
             </section>
@@ -104,17 +106,17 @@
         <section class="content">
           <section class="container margin--center">
             <section class="wrap wrap--content display--fl fl--align-st">
-              <aside class="filters background--block"><small class="btn-btn--close position--a cursor--pointer"></small>
+              <aside class="filters background--block border--rad-5"><small class="btn-btn--close position--a cursor--pointer"></small>
                 <section class="filters__item border--b-dim-white">
                   <h3 class="filters__title font font--med text--small color--med-gray position--r cursor--pointer">Price</h3>
                   <section class="filters__body display--none">
                     <section class="filters__range indent--range" id="slider-range"></section>
                     <section class="filters__interval display--fl fl--align-c fl--just-b indent--interval">
                       <section class="wrap wrap--input-range position--r font font--med text--low-small color--med-gray">
-                        <input class="input input--range input--range-min filters__range font font--med text--low-small color--med-gray border--dim-white" type="text" id="range-min">
+                        <input class="input input--range input--range-min filters__range font font--med text--low-small color--med-gray border--dim-white border--rad-3" type="text" id="range-min">
                       </section><small class="sign font font--med text--low-small color--med-gray">&ndash;</small>
                       <section class="wrap wrap--input-range position--r font font--med text--low-small color--med-gray">
-                        <input class="input input--range input--range-max filters__range font font--med text--low-small color--med-gray border--dim-white" type="text" id="range-max">
+                        <input class="input input--range input--range-max filters__range font font--med text--low-small color--med-gray border--dim-white border--rad-3" type="text" id="range-max">
                       </section>
                     </section>
                   </section>
@@ -504,14 +506,14 @@
                 </section>
               </aside>
               <article class="goods">
-                <header class="goods__filters display--fl fl--just-b indent--goods-filters background--block">
+                <header class="goods__filters display--fl fl--just-b indent--goods-filters background--block border--rad-5">
                   <article class="sort display--fl fl--align-c fl--grow-1"><a class="sort__item sort__item--active sort__item--pop font text--pre-small cursor--pointer position--r hover hover--clr-blur" href="#">Popular products</a><a class="sort__item sort__item--low font text--pre-small cursor--pointer position--r hover hover--clr-blur" href="#">Low price</a><a class="sort__item font text--pre-small cursor--pointer position--r hover hover--clr-blur" href="#">High price</a></article>
                   <section class="wrap wrap--filters display--fl"><a class="btn btn--filters cursor--pointer border--l-dim-white" id="modal-filters" href="#"><span class="btn__text btn__text--filters font font--bold text--pre-small color--dark-gray position--r">Filters</span></a>
                     <article class="view display--fl fl--align-c"><a class="view__btn view__btn--grid view__btn--active border--l-dim-white display--fl fl--align-c fl--just-c" href="#"><span class="view__span view__span--grid"></span></a><a class="view__btn view__btn--list border--l-dim-white display--fl fl--align-c fl--just-c" href="#"><span class="view__span view__span--list"></span></a></article>
                   </section>
                 </header>
                 <main class="goods__content display--fl fl--row-wr position--r">
-                  <article class="item display--fl fl--col-nowr background--block indent--item">
+                  <article class="item display--fl fl--col-nowr background--block indent--item border--rad-5">
                     <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
                       <section class="item__info display--fl fl--just-b fl--align-c">
                         <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
@@ -535,7 +537,7 @@
                       <article class="icon icon--shop-cart cursor--pointer"><img class="icon__img" src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon"></article>
                     </section>
                   </article>
-                  <article class="item display--fl fl--col-nowr background--block indent--item">
+                  <article class="item display--fl fl--col-nowr background--block indent--item border--rad-5">
                     <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
                       <section class="item__info display--fl fl--just-b fl--align-c">
                         <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
@@ -559,7 +561,7 @@
                       <article class="icon icon--shop-cart cursor--pointer"><img class="icon__img" src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon"></article>
                     </section>
                   </article>
-                  <article class="item display--fl fl--col-nowr background--block indent--item">
+                  <article class="item display--fl fl--col-nowr background--block indent--item border--rad-5">
                     <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
                       <section class="item__info display--fl fl--just-b fl--align-c">
                         <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
@@ -583,7 +585,7 @@
                       <article class="icon icon--shop-cart cursor--pointer"><img class="icon__img" src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon"></article>
                     </section>
                   </article>
-                  <article class="item display--fl fl--col-nowr background--block indent--item">
+                  <article class="item display--fl fl--col-nowr background--block indent--item border--rad-5">
                     <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
                       <section class="item__info display--fl fl--just-b fl--align-c">
                         <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
@@ -607,7 +609,7 @@
                       <article class="icon icon--shop-cart cursor--pointer"><img class="icon__img" src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon"></article>
                     </section>
                   </article>
-                  <article class="item display--fl fl--col-nowr background--block indent--item">
+                  <article class="item display--fl fl--col-nowr background--block indent--item border--rad-5">
                     <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
                       <section class="item__info display--fl fl--just-b fl--align-c">
                         <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
@@ -631,7 +633,7 @@
                       <article class="icon icon--shop-cart cursor--pointer"><img class="icon__img" src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon"></article>
                     </section>
                   </article>
-                  <article class="item display--fl fl--col-nowr background--block indent--item">
+                  <article class="item display--fl fl--col-nowr background--block indent--item border--rad-5">
                     <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
                       <section class="item__info display--fl fl--just-b fl--align-c">
                         <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
@@ -655,7 +657,7 @@
                       <article class="icon icon--shop-cart cursor--pointer"><img class="icon__img" src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon"></article>
                     </section>
                   </article>
-                  <article class="item display--fl fl--col-nowr background--block indent--item">
+                  <article class="item display--fl fl--col-nowr background--block indent--item border--rad-5">
                     <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
                       <section class="item__info display--fl fl--just-b fl--align-c">
                         <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
@@ -679,7 +681,7 @@
                       <article class="icon icon--shop-cart cursor--pointer"><img class="icon__img" src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon"></article>
                     </section>
                   </article>
-                  <article class="item display--fl fl--col-nowr background--block indent--item">
+                  <article class="item display--fl fl--col-nowr background--block indent--item border--rad-5">
                     <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
                       <section class="item__info display--fl fl--just-b fl--align-c">
                         <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
@@ -703,7 +705,7 @@
                       <article class="icon icon--shop-cart cursor--pointer"><img class="icon__img" src="../img/icons/shop-cart-full.png" alt="shop-cart-full icon"></article>
                     </section>
                   </article>
-                  <article class="item display--fl fl--col-nowr background--block indent--item">
+                  <article class="item display--fl fl--col-nowr background--block indent--item border--rad-5">
                     <header class="item__header display--fl fl--just-b fl--align-c"><span class="sale font font--black font--upper text--extra-small color--gray">Sale 10%</span>
                       <section class="item__info display--fl fl--just-b fl--align-c">
                         <article class="icon icon--list cursor--pointer"><img class="icon__img" src="../img/icons/list-2.png" alt="list icon"></article>
@@ -728,7 +730,7 @@
                     </section>
                   </article>
                 </main>
-                <article class="pagination background--block display--fl fl--just-b fl--align-c"><a class="pagination__link pagination__link--arrow pagination__link--arrow-prev position--r font font--black font--upper text--extra-small color--gray ls--015em">Prev<span class="pagination__abbrev">ious page</span></a>
+                <article class="pagination background--block display--fl fl--just-b fl--align-c border--rad-5"><a class="pagination__link pagination__link--arrow pagination__link--arrow-prev position--r font font--black font--upper text--extra-small color--gray ls--015em">Prev<span class="pagination__abbrev">ious page</span></a>
                   <section class="pagination__pages"><a class="pagination__link pagination__link--num font font--med ls--015em text--small color--med-gray">1</a></section><a class="pagination__link pagination__link--arrow pagination__link--arrow-next position--r font font--black font--upper text--extra-small color--gray ls--015em">Next<span class="pagination__abbrev"> page</span></a>
                 </article>
               </article>
@@ -736,11 +738,11 @@
           </section>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer indent--footer background--block">
         <section class="footer__nav border--b-dim-white">
           <section class="container margin--center">
             <section class="wrap wrap--footer display--fl">
-              <section class="info display--fl fl--align-c fl--just-b"><a class="logo font font--black font--upper text--large color--nearly-black ls--08em" href="/">Quantum</a>
+              <section class="info display--fl fl--align-c fl--just-b"><a class="logo logo--footer display--fl fl--align-c" href="/"><img class="img img--logo" src="../img/logo.jpg" alt="logo"></a>
                 <section class="menu menu--footer display--fl fl--align-c fl--just-c fl--grow-1">
                   <section class="menu menu--f-nav position--r"><a class="btn menu__link menu__link--footer menu__link--sub menu__link--sub cursor--pointer position--r color--med-gray hover hover--clr-blur" id="btn-sub" href="#"><span class="btn__text btn__text--footer font font--med text--medium position--r">Shop</span></a>
                     <ul class="menu__list menu__list--footer menu__list--info position--a display--fl fl--row-wr">
@@ -780,18 +782,18 @@
       </footer>
     </article>
     <article class="background background--modal position--f display--none"></article>
-    <article class="modal modal--sign-in position--a background--block"><small class="btn-btn--close position--a cursor--pointer"></small>
+    <article class="modal modal--sign-in position--a background--block border--rad-5"><small class="btn btn--close position--a cursor--pointer"></small>
       <h2 class="title--medium align--c color--med-gray font font--reg indent--modal-title">Sign in</h2>
       <form class="form form--sign-in display--fl fl--col-nowr fl--just-c">
         <section class="form__wrap form__wrap--name">
           <label class="label label--sign-in font font--med text--medium color--dark-gray display--fl fl--col-nowr cursor--pointer" for="modName">Login</label>
-          <input class="input input--modal border--dim-white" type="text" placeholder="Enter name" id="modName" name="name">
+          <input class="input input--modal border--dim-white border--rad-3" type="text" placeholder="Enter name" id="modName" name="name">
         </section>
         <section class="form__wrap form__wrap--pass">
           <label class="label label--sign-in font font--med text--medium color--dark-gray display--fl fl--col-nowr cursor--pointer" for="modPass">Password</label>
-          <input class="input input--modal border--dim-white" type="password" placeholder="Enter password" id="modPass" name="password">
+          <input class="input input--modal border--dim-white border--rad-3" type="password" placeholder="Enter password" id="modPass" name="password">
         </section>
-        <button class="btn btn--form font font--med text--medium color--dark-gray cursor--pointer border--dim-white margin--center hover hover--bg-blur-05 hover--clr-blur">Sign in</button>
+        <button class="btn btn--form font font--med text--medium color--dark-gray cursor--pointer border--dim-white margin--center hover hover--bg-blur-05 hover--clr-blur border--rad-3">Sign in</button>
       </form>
     </article>
   </body>

@@ -96,7 +96,7 @@ $(() => {
             $(".background--modal").fadeIn();
         });
 
-        $(".modal__close").click((e) => {
+        $(".btn--close").click((e) => {
             const { target: btnClose = '' } = e;
             $(btnClose).parent().removeClass("modal--show-top");
             $(".background--modal").fadeOut();
