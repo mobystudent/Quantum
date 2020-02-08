@@ -49,8 +49,8 @@ block content
                         section.filters__body
                            section.filters__content.display--fl.fl--row-wr.fl--just-b
                               
-                              - const brandValue = ['apple', 'sony', 'asus', 'lg', 'lenovo', 'meizu', 'xiaomi', 'htc',]
-                              - const brandName = ['Apple', 'Sony', 'Asus', 'LG', 'Lenovo', 'Meizu', 'Xiaomi', 'HTC']
+                              - const brandValue = ['apple', 'sony', 'asus', 'lg', 'lenovo', 'meizu', 'xiaomi', 'htc', 'apple', 'sony', 'asus', 'lg']
+                              - const brandName = ['Apple', 'Sony', 'Asus', 'LG', 'Lenovo', 'Meizu', 'Xiaomi', 'HTC', 'Apple', 'Sony', 'Asus', 'LG']
                               - for (let i = 0; i < brandName.length; i++)
                                  article.checkbox.indent--checkbox
                                     input.input.input--checkbox.checkbox__input.display--none(type="checkbox" id=`${brandValue[i]}-br` name="brand" value=brandValue[i])
@@ -62,8 +62,8 @@ block content
                         section.filters__body
                            section.filters__content.display--fl.fl--row-wr.fl--just-b
                               
-                              - const colorValue = ['ivory', 'deep grey', 'coffee', 'red', 'pink', 'yellow', 'green', 'black',]
-                              - const colorName = ['Ivory', 'Deep Grey', 'Coffee', 'Red', 'Pink', 'Yellow', 'Green', 'Black']
+                              - const colorValue = ['ivory', 'deep grey', 'coffee', 'red', 'pink', 'yellow', 'green', 'black', 'ivory', 'deep grey', 'coffee', 'red']
+                              - const colorName = ['Ivory', 'Deep Grey', 'Coffee', 'Red', 'Pink', 'Yellow', 'Green', 'Black', 'Ivory', 'Deep Grey', 'Coffee', 'Red']
                               - for (let i = 0; i < colorName.length; i++)
                                  article.checkbox.indent--checkbox
                                     input.input.input--checkbox.checkbox__input.display--none(type="checkbox" id=`${colorValue[i]}-clr` name="color" value=colorValue[i])

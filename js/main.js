@@ -39,4 +39,36 @@ $(() => {
             button = ($(btnMenu)[0].tagName == 'A') ? $(btnMenu) : $(btnMenu).parent();
         button.next().toggle();
     });
+
+    $(() => {
+        $(".filters__item").map((i, item) => {
+            const checkbox = $(item).find(".checkbox"),
+                lenCheckbox = checkbox.length;
+
+            if(!checkbox) return;
+
+            $(checkbox).map((j) => {
+                if(j > 7)
+                    $(checkbox).eq(j).addClass("display--none");
+            });
+
+            if(lenCheckbox < 9)
+                $(item).find(".show").hide();
+        });
+
+        $(".show").click((e) => {
+            e.preventDefault();
+            e.stopPropagation();
+
+            const { target: btnMore = '' } = e,
+                checkbox = $(btnMore).parent().find(".checkbox");
+
+            $(checkbox).map((i, item) => {
+                if($(item).hasClass("display--none"))
+                    $(item).removeClass("display--none");
+            });
+
+            $(btnMore).hide();
+        });
+    });
 });
