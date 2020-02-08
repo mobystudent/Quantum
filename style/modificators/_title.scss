@@ -1,5 +1,5 @@
 .title {
-    &--medium {
+    &--large {
         font-size: 30px;
 
         @media screen and (max-width: 1024px) {
@@ -12,6 +12,22 @@
 
         @media screen and (max-width: 579px) {
             font-size: 24px;
+        }
+    }
+
+    &--medium {
+        font-size: 24px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 22px;
+        }
+
+        @media screen and (max-width: 720px) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 579px) {
+            font-size: 18px;
         }
     }
 

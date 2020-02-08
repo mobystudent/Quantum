@@ -35,4 +35,14 @@
             background-size: cover;
         }
     }
+
+    &__wrap {
+        &--name {
+            margin-bottom: 15px;
+        }
+
+        &--pass {
+            margin-bottom: 25px;
+        }
+    }
 }

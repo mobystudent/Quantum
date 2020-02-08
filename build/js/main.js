@@ -71,6 +71,19 @@ $(() => {
             $(btnMore).hide();
         });
     });
+
+    $(() => {
+        $(".personal__item--sign-in").click((e) => {
+            $(".modal--sign-in").addClass("modal--show-top");
+            $(".background--modal").fadeIn();
+        });
+
+        $(".modal__close").click((e) => {
+            const { target: btnClose = '' } = e;
+            $(btnClose).parent().removeClass("modal--show-top");
+            $(".background--modal").fadeOut();
+        });
+    });
 });
 
 //# sourceMappingURL=main.js.map

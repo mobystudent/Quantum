@@ -18,4 +18,11 @@
             padding: 8px 12px;
         }
     }
+
+    &--modal {
+        width: 100%;
+        border-radius: 3px;
+        padding: 10px 16px;
+        @include placeholder(14px, $gray);
+    }
 }
